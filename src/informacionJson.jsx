@@ -11,6 +11,12 @@ const informacionJson = [
         descripcion:"descripcion 1",
         img:"",
         link:"",
+    },
+    {
+        titulo:"Titulo 3",
+        descripcion:"descripcion 1",
+        img:"",
+        link:"",
     }
         
     
