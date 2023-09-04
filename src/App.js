@@ -1,14 +1,22 @@
 import React, { Component } from 'react';
-import IndexPrincipal from './IndexPrincipal';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-export default class App extends Component {
+import './App.css'
+
+import IndexPrincipal from './Index Principal';
+
+class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <IndexPrincipal />
-        </header>
-      </div>
+      <Router>
+        <div className="App">
+          <header className="App-header">
+            <IndexPrincipal />
+          </header>
+        </div>
+      </Router>
     );
   }
 }
+
+export default App;
