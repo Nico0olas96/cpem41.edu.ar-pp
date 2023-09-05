@@ -43,7 +43,7 @@ class TurnoDiurno extends Component {
         return (
             <div className='seccion_menu'>
                 <div className='seccion'>
-                    <h2>Turno Diurno</h2>
+                    <h1> Turno Diurno </h1>
 
                     <div className='btn' onClick={this.cargarProgramas}>Programas</div>
                     <div className='btn' onClick={this.cargarMesas}>Mesas de Examenes</div>
