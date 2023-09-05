@@ -1,10 +1,19 @@
 import React, { Component } from 'react';
 
+import Header from '../Header'
+import Noticias from '../Noticias/Noticias'
+import Informacion from '../Informacion/Informacion'
+
 class Inicio extends Component {
     render() {
         return (
             <div>
-                <h2>Inicio</h2>
+                <Header/>
+
+                <Noticias/>
+
+                <Informacion/>
+
             </div>
         );
     }
