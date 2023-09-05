@@ -9,6 +9,9 @@ import AcuerdosEscolares from './Menus/Acuerdos Escolares'
 import Docentes from './Menus/Docentes'
 import Footerr from './Footerr'
 
+
+import TurnoDiurno from './Alumno/TD/TurnoDiurno'
+
 class IndexPrincipal extends Component {
     render() {
         return (
@@ -22,6 +25,10 @@ class IndexPrincipal extends Component {
                     <Route path='/biblioteca' element={<Biblioteca/>}/>
                     <Route path='/acuerdos-escolares' element={<AcuerdosEscolares/>}/>
                     <Route path='/docentes' element={<Docentes/>}/>
+
+
+                    <Route path='/Alumno/TD/TurnoDiurno' element={<TurnoDiurno/>}/>
+
                 </Routes>
 
 

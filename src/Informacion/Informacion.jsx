@@ -15,37 +15,43 @@ class Informacion extends Component {
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
+    cargarI = () => {
+        this.setState(prevState => ({
+            informacionVisible : prevState.informacionVisible + 4
+        }))
+    }
 
 
 
     render() {
-
-
-
+        
+        const {informacion, informacionVisible } = this.state
 
 
         return (
             <div>
                 <div className='informacion container'>
 
+                    <h2> INFORMACION IMPORTANTE </h2>
 
+                    <div className='informacion_container'>
 
-                    <SecccionInformacion/>
+                        {informacion.slice(0, informacionVisible).map((item, index) => (
+                            <SecccionInformacion 
+                                key = {index}
+                                tituloI = {item.titulo}
+                                descriipcionI = {item.descripcion}
+                                imgI = {item.img}
+                                linkI = {item.link}
 
+                            />
+                        ))}
 
+                    </div>
 
+                    {informacionVisible < informacion.length && 
+                        ( <div className='btn_2' onClick={this.cargarI}> Cargar Mas </div> )
+                    }
 
                 </div>
                 

@@ -16,6 +16,13 @@ class Noticias extends Component {
     }
 
 
+    cargarContenido = () => {
+        this.setState (prevState => ({
+           noticiasVesibles : prevState.noticiasVesibles + 4  
+        }))
+    }
+
+
 
 
 
@@ -27,23 +34,34 @@ class Noticias extends Component {
 
     render() {
 
-
+        const {noticias, noticiasVesibles} = this.state
 
 
         return (
             <div>
                 <div className='noticias container'>
+                
+                    <h2> NOTICIAS </h2>
 
-                    <SeccionNoticias/>
+                    <div className='noticias_container'>
 
+                        {noticias.slice(0, noticiasVesibles).map((item, index) => (
+                            
+                            <SeccionNoticias
+                                key={index}
+                                tituloN = {item.titulo}
+                                descripcionN = {item.descripcion}
+                                imgN = {item.img}
+                                linkN = {item.link}
+                            />
+                        ))}               
                 
                 
-                
-                
-                
-                
-                
-                
+                    </div>
+
+                    {noticiasVesibles < noticias.length && (
+                        <div className='btn_3' onClick={this.cargarContenido}> Cargar Mas </div>
+                    )}                
                 
                 
                 
