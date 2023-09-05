@@ -22,8 +22,8 @@ class Menu extends Component {
 
                             <li> <Link to="/"> Inicio </Link> </li>
                             <li> <Link to="https://www.facebook.com/profile.php?id=100063963467679" rel="noopener noreferrer" target="_blank"> Facebook </Link> </li>
-                            <li> <Link to="/alumno"> alumno </Link> </li>
-                            <li> <Link to="/biblioteca"> biblioteca </Link> </li>
+                            <li> <Link to="/alumno"> Alumno </Link> </li>
+                            <li> <Link to="/biblioteca"> Biblioteca </Link> </li>
                             <li> <Link to="/acuerdos-escolares"> Acuerdos Escolares </Link> </li>
                             <li> <Link to="/docentes"> Docentes </Link> </li>
                             

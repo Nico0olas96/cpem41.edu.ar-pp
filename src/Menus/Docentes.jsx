@@ -3,8 +3,12 @@ import React, { Component } from 'react';
 class Docentes extends Component {
     render() {
         return (
-            <div>
-                <h2>Docentes</h2>
+            <div className='seccion_menu'>
+                <div className='seccion'>
+                    
+                    <h2>Docentes</h2>
+                
+                </div>
             </div>
         );
     }

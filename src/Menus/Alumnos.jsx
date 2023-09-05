@@ -13,7 +13,7 @@ class Alumnos extends Component {
 
 
                     <Link to='/Alumno/TD/TurnoDiurno' className='btn'> Turno Diurno </Link>
-                    <Link to='/TurnoVespertino' className='btn'> Turno Vespertino </Link>
+                    <Link to='/Alumno/TV/TurnoVespertino' className='btn'> Turno Vespertino </Link>
 
 
                 </div>

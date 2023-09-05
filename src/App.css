@@ -208,14 +208,16 @@ h2 {
 .noticias_2 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 10px;
-    min-height: 250px;
+    height: 350px; /* Establece una altura fija */
     width: 250px;
     box-sizing: border-box;
+    margin-bottom: 20px; /* Agrega margen inferior para separar las noticias */
 }
+
+
 
 .section_1 {
     display: flex;
@@ -225,6 +227,7 @@ h2 {
     padding: 10px;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
 }
 
 .section_1 h3 {
@@ -243,8 +246,10 @@ h2 {
     font-size: 14px;
     color: #2c3e50;
     text-align: center;
-    margin-top: auto; /* Alineamos el párrafo en la parte inferior */
-    margin-bottom: 10px; /* Agregamos margen inferior al párrafo */
+    margin: 10px; /* Agregamos margen inferior al párrafo */
+    
+    overflow-y: auto; /* Habilita el desbordamiento vertical y muestra una barra de desplazamiento si es necesario */
+
 }
 
 .btn_noticia {
@@ -254,6 +259,8 @@ h2 {
     border-radius: 10px;
     text-align: center;
     display: block;
+
+    margin-top: auto; /* Alineamos el párrafo en la parte inferior */
 }
 
 .btn_3 {
@@ -292,7 +299,6 @@ h2 {
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 5px 10 px rgba(0, 0, 0, 0.2);
-    display: inline-block;
 }
 
 .Informacion_2 p {
@@ -303,6 +309,9 @@ h2 {
 .Informacion_2 h3 {
     font-size: 22px;
     color: #000000;
+}
+.Informacion_2 img {
+    max-width: 90%;
 }
 
 
@@ -425,6 +434,44 @@ h2 {
 
 
 /* PROGRAMAS */
+
+.mi-tabla {	
+	
+	border: 2px solid #ccc;
+	
+	box-shadow: 2px 2px 5px rgba(11, 0, 43, 0.3);
+	
+	margin-right: 0px;
+	border-collapse: collapse;
+
+
+}
+
+.mi-tabla th {
+	padding: 10px;
+  }
+  
+.mi-tabla th {
+	background-color: #333;
+	color: white;
+  }
+
+.mi-tabla td {
+	text-align: center;
+	padding: 10px;
+	
+  }
+  
+  
+.mi-tabla tr:nth-child(even) {
+	background-color: #f2f2f2;
+  }
+  
+  .mi-tabla tr:hover {
+	background-color: #8692CD;
+    cursor: pointer;
+  }
+
 .tabla-programas {
     width: 100%;
     margin: 10px;
@@ -473,6 +520,8 @@ h2 {
 
 .tabla-programas tr:hover {
   background-color: #8e91a0;
+  
+  cursor: pointer;
 }  
 
 .links button {

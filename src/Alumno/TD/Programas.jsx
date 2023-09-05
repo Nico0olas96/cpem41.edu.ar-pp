@@ -49,7 +49,7 @@ class Programas extends Component {
             <div>
                 <div className='seccion'>
 
-                    <h1>Programas</h1>
+                    <h1>PROGRAMAS</h1>
 
 
                     <div className='btn' onClick={this.cargar1ro2do}>1ro y 2do</div>

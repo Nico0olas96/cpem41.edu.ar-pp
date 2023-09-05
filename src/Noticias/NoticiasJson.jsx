@@ -15,7 +15,7 @@ const NoticiasJson = [
     },
     {
         titulo: "Noticias por json 3",
-        descripcion: "Descripcion noticias por json ",
+        descripcion: "Descripcion noticias por json y probando a ver si anda el coso de al lado para scrolear y me falto mas texto",
         img: "",
         link: "#"
     },

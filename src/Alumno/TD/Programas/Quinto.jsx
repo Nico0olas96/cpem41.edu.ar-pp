@@ -178,7 +178,7 @@ const Quinto = () => {
 			
 			<tr>
 
-				<td>Metodologia de la Investigacion Aplicada</td>
+				<td style={{ fontSize: '13px' }}>Metodologia de la Investigacion Aplicada</td>
 				<td><a href="Programas/1er año/#" target="_blank" className="links" ><button>Click Aca</button></a></td>
 
 			</tr>

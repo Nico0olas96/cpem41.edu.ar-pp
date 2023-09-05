@@ -24,14 +24,6 @@ class Noticias extends Component {
 
 
 
-
-
-
-
-
-
-
-
     render() {
 
         const {noticias, noticiasVesibles} = this.state
