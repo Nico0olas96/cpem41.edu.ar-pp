@@ -8,7 +8,6 @@ class Inicio extends Component {
     render() {
         return (
             <div>
-                <Header/>
 
                 <Noticias/>
 

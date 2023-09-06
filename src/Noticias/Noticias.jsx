@@ -37,6 +37,7 @@ class Noticias extends Component {
 
                     <div className='noticias_container'>
 
+                      
                         {noticias.slice(0, noticiasVesibles).map((item, index) => (
                             
                             <SeccionNoticias
@@ -47,7 +48,7 @@ class Noticias extends Component {
                                 linkN = {item.link}
                             />
                         ))}               
-                
+                    
                 
                     </div>
 

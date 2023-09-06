@@ -8,36 +8,11 @@ const NoticiasJson = [
         link: "https://www.fi.uncoma.edu.ar"
     },
     {
-        titulo: "Noticias por json 2",
-        descripcion: "Descripcion noticias por json ",
-        img: "",
-        link: "#"
-    },
-    {
-        titulo: "Noticias por json 3",
-        descripcion: "Descripcion noticias por json y probando a ver si anda el coso de al lado para scrolear y me falto mas texto",
-        img: "",
-        link: "#"
-    },
-    {
-        titulo: "Noticias por json 4",
-        descripcion: "Descripcion noticias por json ",
-        img: "",
-        link: "#"
-    },
-    {
-        titulo: "Noticias por json 5",
-        descripcion: "Descripcion noticias por json ",
-        img: "",
-        link: "#"
-    },
-    {
-        titulo: "Noticias por json 6",
-        descripcion: "Descripcion noticias por json ",
-        img: "",
-        link: "#"
+        titulo:"Universidad Nacional del Comahue",
+        descripcion : "La Universidad Nacional del Comahue es una universidad pública argentina distribuida entre las provincias de Neuquén y Río Negro con centro en la ciudad de Neuquén",
+        img : "/imagenes/universidad del comahue.png" ,
+        link : "https://www.uncoma.edu.ar"
     }
-
 ]
 
 export default NoticiasJson;

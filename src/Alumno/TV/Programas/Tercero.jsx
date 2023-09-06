@@ -4,7 +4,7 @@ const Tercero = () => {
     return (
         <div className='seccion'>
 
-            <h1>PROGRAMAS DE ESTUDIOS - REGULAR 2023</h1>
+            <h1>PROGRAMAS DE ESTUDIOS - 2023</h1>
 
             <h3>Materias Plan Institucional - 3er y 4to año</h3>
 
@@ -19,94 +19,74 @@ const Tercero = () => {
 					<th>Programa</th>
 
 				</tr>
-				<tr>
-
-					<td>Lengua y Literatura</td>
-					<td><a href="Programas/1er año/#" target="_blank" className="links" ><button>Click Aca</button></a></td>
-
-				</tr>
 				
 				<tr>
 
-					<td>Matematica</td>
-					<td><a href="Programas/1er año/#" target="_blank" className="links" ><button>Click Aca</button></a></td>
-
-				</tr>
-				
-				<tr>
-
-					<td>Idioma Extranjero Ingles o Frances</td>
-					<td><a href="Programas/1er año/#" target="_blank" className="links" ><button>Click Aca</button></a></td>
-
-				</tr>
-				
-				<tr>
-
-					<td>Ciencias Biologicas</td>
-					<td><a href="Programas/1er año/#" target="_blank" className="links" ><button>Click Aca</button></a></td>
-
-				</tr>
-				
-				<tr>
-
-					<td>Edicacion Plastica</td>
-					<td><a href="Programas/1er año/#" target="_blank" className="links" ><button>Click Aca</button></a></td>
-
-				</tr>
-				
-				<tr>
-
-					<td>Geografia</td>
-					<td><a href="Programas/1er año/#" target="_blank" className="links" ><button>Click Aca</button></a></td>
-
-				</tr>
-				
-				<tr>
-
-					<td>Educacion Civica</td>
-					<td><a href="Programas/1er año/#" target="_blank" className="links" ><button>Click Aca</button></a></td>
-
-				</tr>
-				
-				<tr>
-
-					<td>Historia</td>
-					<td><a href="Programas/1er año/#" target="_blank" className="links" ><button>Click Aca</button></a></td>
-
-				</tr>
-				
-				<tr>
-
-					<td>Fisica</td>
-					<td><a href="Programas/1er año/#" target="_blank" className="links" ><button>Click Aca</button></a></td>
-
-				</tr>
-				
-				<tr>
-
-					<td>Quimica</td>
-					<td><a href="Programas/1er año/#" target="_blank" className="links" ><button>Click Aca</button></a></td>
+					<td>Adm. Empresas</td>
+					<td><a href="https://drive.google.com/drive/folders/1ZB6oGTykpbamN-o-QIo7fiXp0YhCG_MT?usp=drive_link" target="_blank" class="links" ><button>Click Aca</button></a></td>
 
 				</tr>
 				
 				<tr>
 
 					<td>Contabilidad</td>
-					<td><a href="Programas/1er año/#" target="_blank" className="links" ><button>Click Aca</button></a></td>
+					<td><a href="https://drive.google.com/drive/folders/1FvoOidv0XXemupHahGHCuFyvhx3J-ge2?usp=drive_link" target="_blank" class="links" ><button>Click Aca</button></a></td>
 
 				</tr>
 				
 				<tr>
 
-					<td>Mecanografia</td>
-					<td><a href="Programas/1er año/#" target="_blank" className="links" ><button>Click Aca</button></a></td>
+					<td>Derecho</td>
+					<td><a href="https://drive.google.com/drive/folders/1JZD1SLQKPysBvuOR9ZRiOsV3aSBDBClh?usp=drive_link" target="_blank" class="links" ><button>Click Aca</button></a></td>
 
 				</tr>
 				
 				<tr>
 
-					<td>Educacion Fisica</td>
-					<td><a href="Programas/1er año/#" target="_blank" className="links" ><button>Click Aca</button></a></td>
+					<td>Economia</td>
+					<td><a href="https://drive.google.com/drive/folders/1ao0fO8s_2JisAgCnR7RCTjbbsVN-bC4t?usp=drive_link" target="_blank" class="links" ><button>Click Aca</button></a></td>
+
+				</tr>
+				
+				<tr>
+
+					<td>Ed. Civica</td>
+					<td><a href="https://drive.google.com/drive/folders/1rUUlDRgjts6f3omviKwW7MxXY_G1ZW_M?usp=drive_link" target="_blank" class="links" ><button>Click Aca</button></a></td>
+
+				</tr>
+				
+				<tr>
+
+					<td>Fisica</td>
+					<td><a href="https://drive.google.com/drive/folders/11VO9H-6mOgwMaHEolfEVlXxOemrmGAM4?usp=drive_link" target="_blank" class="links" ><button>Click Aca</button></a></td>
+
+				</tr>
+				
+				<tr>
+
+					<td>Ingles</td>
+					<td><a href="https://drive.google.com/drive/folders/1Ds-35yhEkc43T6yvH_CMfPUKe_Yz4roC?usp=drive_link" target="_blank" class="links" ><button>Click Aca</button></a></td>
+
+				</tr>
+				
+				<tr>
+
+					<td>Lengua</td>
+					<td><a href="https://drive.google.com/drive/folders/1MnnRuie63KBBmCY6nCdjIYkYrUGG_-dN?usp=drive_link" target="_blank" class="links" ><button>Click Aca</button></a></td>
+
+				</tr>
+				
+				<tr>
+
+					<td>Matematica</td>
+					<td><a href="https://drive.google.com/drive/folders/1P1hn0EiTHlXQF1GRRNwbx_yDajFqAfOu?usp=drive_link" target="_blank" class="links" ><button>Click Aca</button></a></td>
+
+				</tr>
+				
+				<tr>
+
+					<td>Psicologia</td>
+					<td><a href="https://drive.google.com/drive/folders/1M5UAGKijDYM0HgIHgyYRUgKcR2gDST3K?usp=drive_link" target="_blank" class="links" ><button>Click Aca</button></a></td>
 
 				</tr>
 
@@ -120,90 +100,69 @@ const Tercero = () => {
 					<th>Programa</th>
 
 				</tr>
-				
-				<tr>
+			
+			<tr>
 
-					<td>Matematica</td>
-					<td><a href="Programas/1er año/#" target="_blank" className="links" ><button>Click Aca</button></a></td>
+				<td>Ap. y Pllab</td>
+				<td><a href="https://drive.google.com/drive/folders/1YEOakAR8w6iAKeHwUdAOMZ7o3-X5EJmZ?usp=drive_link" target="_blank" class="links" ><button>Click Aca</button></a></td>
 
-				</tr>
-				
-				<tr>
+			</tr>
+			
+			<tr>
 
-					<td>Lengua y Literatura</td>
-					<td><a href="Programas/1er año/#" target="_blank" className="links" ><button>Click Aca</button></a></td>
+				<td>Contabilidad</td>
+				<td><a href="https://drive.google.com/drive/folders/1Yri6P82NgqvyXq9o9Oe3p_EKM_9JucyM?usp=drive_link" target="_blank" class="links" ><button>Click Aca</button></a></td>
 
-				</tr>
-				
-				<tr>
+			</tr>
+			
+			<tr>
 
-					<td>Ciencias Biologicas</td>
-					<td><a href="Programas/1er año/#" target="_blank" className="links" ><button>Click Aca</button></a></td>
+				<td>Derecho</td>
+				<td><a href="https://drive.google.com/drive/folders/1Z2cJSe5fw42ceBDoM9wkjLG1RaBtqulr?usp=drive_link" target="_blank" class="links" ><button>Click Aca</button></a></td>
 
-				</tr>
-				
-				<tr>
+			</tr>
+			
+			<tr>
 
-					<td>Historia</td>
-					<td><a href="Programas/1er año/#" target="_blank" className="links" ><button>Click Aca</button></a></td>
+				<td>Finanzas</td>
+				<td><a href="https://drive.google.com/drive/folders/16VM2bpW4lrqxSwuAAlCZ9R9G5bNZBYUx?usp=drive_link" target="_blank" class="links" ><button>Click Aca</button></a></td>
 
-				</tr>
-				
-				<tr>
+			</tr>
+			
+			<tr>
 
-					<td>Geografia</td>
-					<td><a href="Programas/1er año/#" target="_blank" className="links" ><button>Click Aca</button></a></td>
+				<td>Ingles</td>
+				<td><a href="https://drive.google.com/drive/folders/1rEfaq90TtNli5uFYGUHSqLD1uTUSA6JZ?usp=drive_link" target="_blank" class="links" ><button>Click Aca</button></a></td>
 
-				</tr>
-				
-				<tr>
+			</tr>
+			
+			<tr>
 
-					<td>Ciencias Fisico Quimicas</td>
-					<td><a href="Programas/1er año/#" target="_blank" className="links" ><button>Click Aca</button></a></td>
+				<td>Leg. y Prac. de Campo</td>
+				<td><a href="https://drive.google.com/drive/folders/15zrvg25Ri2_0mfXHMLmfv2ha-fsn1CB3?usp=drive_link" target="_blank" class="links" ><button>Click Aca</button></a></td>
 
-				</tr>
-				
-				<tr>
+			</tr>
+			
+			<tr>
 
-					<td>Ecologia I y Recursos Naturales</td>
-					<td><a href="Programas/1er año/#" target="_blank" className="links" ><button>Click Aca</button></a></td>
+				<td>Lengua</td>
+				<td><a href="https://drive.google.com/drive/folders/1kpRjvjm4-nlBpmNH04arAQON3ohXXLKc?usp=drive_link" target="_blank" class="links" ><button>Click Aca</button></a></td>
 
-				</tr>
-				
-				<tr>
+			</tr>
+			
+			<tr>
 
-					<td>Contaminacion Ambiental</td>
-					<td><a href="Programas/1er año/#" target="_blank" className="links" ><button>Click Aca</button></a></td>
+				<td>Matematica</td>
+				<td><a href="https://drive.google.com/drive/folders/1us7ImVrJrdTDlgwn816bm79d4xNOFLjK?usp=drive_link" target="_blank" class="links" ><button>Click Aca</button></a></td>
 
-				</tr>
-				
-				<tr>
+			</tr>
+			
+			<tr>
 
-					<td>Introduccion a la Informatica</td>
-					<td><a href="Programas/1er año/#" target="_blank" className="links" ><button>Click Aca</button></a></td>
+				<td>Quimica</td>
+				<td><a href="https://drive.google.com/drive/folders/1DuWUfftY8DP8uOYOUJdBdMDuHGOS_Cug?usp=drive_link" target="_blank" class="links" ><button>Click Aca</button></a></td>
 
-				</tr>
-				
-				<tr>
-
-					<td>Ingles Tecnico</td>
-					<td><a href="Programas/1er año/#" target="_blank" className="links" ><button>Click Aca</button></a></td>
-
-				</tr>
-				
-				<tr>
-
-					<td>Psicologia</td>
-					<td><a href="Programas/1er año/#" target="_blank" className="links" ><button>Click Aca</button></a></td>
-
-				</tr>
-				
-				<tr>
-
-					<td>Educacion Fisica</td>
-					<td><a href="Programas/1er año/#" target="_blank" className="links" ><button>Click Aca</button></a></td>
-
-				</tr>
+			</tr>
 				
 			</table>		
 		

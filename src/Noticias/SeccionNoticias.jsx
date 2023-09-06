@@ -25,7 +25,7 @@ const SeccionNoticias = ({tituloN, descripcionN, imgN, linkN}) => {
                     {descripcionN}
                 </p>
 
-                <a href={linkN} target='_blank' className='btn_noticia' rel='noopener noreferrer'> Ir a Noticia</a>
+                <a href={linkN} target='_blank' className='btn_noticia' rel='noopener noreferrer'> Ir a la Noticia</a>
 
             </div>
             
