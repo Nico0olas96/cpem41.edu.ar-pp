@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.14ae5505.css",
+    "main.js": "/static/js/main.6098bcb6.js",
+    "static/js/787.8f681b8d.chunk.js": "/static/js/787.8f681b8d.chunk.js",
+    "static/media/logo Cpem41.jpg": "/static/media/logo Cpem41.56f801972d6bd67ba2cb.jpg",
+    "index.html": "/index.html",
+    "main.14ae5505.css.map": "/static/css/main.14ae5505.css.map",
+    "main.6098bcb6.js.map": "/static/js/main.6098bcb6.js.map",
+    "787.8f681b8d.chunk.js.map": "/static/js/787.8f681b8d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.14ae5505.css",
+    "static/js/main.6098bcb6.js"
+  ]
+}
