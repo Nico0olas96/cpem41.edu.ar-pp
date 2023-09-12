@@ -15,6 +15,7 @@ import Footerr from './Footerr'
 
 import TurnoDiurno from './Alumno/TD/TurnoDiurno'
 import TurnoVespertino from './Alumno/TV/TurnoVespertino';
+import DeclaracionesJuradas from './Docentes/Declaraciones Juradas';
 
 
 class IndexPrincipal extends Component {
@@ -40,7 +41,8 @@ class IndexPrincipal extends Component {
 
                     <Route path='/Alumno/TD/TurnoDiurno' element={<TurnoDiurno/>}/>
                     <Route path='/Alumno/TV/TurnoVespertino' element={<TurnoVespertino/>}/>
-                
+
+
 
                 </Routes>
 
