@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/cpem41.edu.ar-pp/static/css/main.8ab4dd44.css",
+    "main.css": "/cpem41.edu.ar-pp/static/css/main.9e4ca565.css",
     "main.js": "/cpem41.edu.ar-pp/static/js/main.7e6751c0.js",
     "static/js/787.8f681b8d.chunk.js": "/cpem41.edu.ar-pp/static/js/787.8f681b8d.chunk.js",
     "static/media/logo Cpem41.jpg": "/cpem41.edu.ar-pp/static/media/logo Cpem41.56f801972d6bd67ba2cb.jpg",
     "index.html": "/cpem41.edu.ar-pp/index.html",
-    "main.8ab4dd44.css.map": "/cpem41.edu.ar-pp/static/css/main.8ab4dd44.css.map",
+    "main.9e4ca565.css.map": "/cpem41.edu.ar-pp/static/css/main.9e4ca565.css.map",
     "main.7e6751c0.js.map": "/cpem41.edu.ar-pp/static/js/main.7e6751c0.js.map",
     "787.8f681b8d.chunk.js.map": "/cpem41.edu.ar-pp/static/js/787.8f681b8d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ab4dd44.css",
+    "static/css/main.9e4ca565.css",
     "static/js/main.7e6751c0.js"
   ]
 }
