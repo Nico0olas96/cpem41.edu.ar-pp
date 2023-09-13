@@ -9,13 +9,13 @@ const DeclaracionesJuradas = () => {
         
             <div className="contenedor-tablas">
 
-                <table className="tabla-programas">
+                <table className="mi-tabla">
 
                     <caption> DECLARACIONES JURADAS </caption>
 
                     <tr>
-                        <td>Formato PDF  👉 <a href='./Descargas/Docentes/declaracion jurada - PDF.pdf' target="_blank" className="links" ><button>Click Aca</button></a></td>
-                        <td>Formato WORD 👉 <a href='./Descargas/Docentes/declaracion jurada - WORD.docx' target="_blank" className="links" ><button>Click Aca</button></a></td>
+                        <td>Formato PDF  👉 <a href='./Descargas/Docentes/declaracion jurada - PDF.pdf' target="_blank" className="linksD" ><button>Click Aca</button></a></td>
+                        <td>Formato WORD 👉 <a href='./Descargas/Docentes/declaracion jurada - WORD.docx' target="_blank" className="linksD" ><button>Click Aca</button></a></td>
                     </tr>
                     
                 </table>

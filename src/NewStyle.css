@@ -32,8 +32,6 @@ body {
     position: relative;
 }
 
-/* MENU */
-
 .menu {
     top: 0;
     left: 0;
@@ -80,19 +78,62 @@ body {
     color: #FF9000;
 }
 
+#menu {
+    display: none;
+}
+
 
 .menu_icono {
     width: 25px;
 }
 
-/* esconder icono menu */
 .menu label {
     cursor: pointer;
     display: none;
 }
 
+/* menu desplejable */
 
-/* HEADER */
+.desplejar_alumno {
+    position: relative;
+    
+}
+
+.desplejar_alumno_1 {
+    position: relative;
+}
+
+.desplejar_alumno_menu {
+    position: absolute;
+    top:100%;
+    left: 0;
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.desplejar_alumno:hover .desplejar_alumno_menu {
+    display: block;
+}
+
+.desplejar_alumno_menu li {
+    margin: 5px 0;
+}
+
+
+
+
+
+.esc {
+    position: absolute;
+    width: 700px;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
 
 .conteiner_header {
     display: flex;
@@ -136,6 +177,11 @@ body {
     background-color: #5d1dde;
 }
 
+.header img {
+    width: 50%;
+    text-align: right;
+}
+
 .img_header img {
     width: 650px;
     margin-bottom: 10px;
@@ -143,12 +189,18 @@ body {
     border: 2px solid #fff; 
 }
 
-/* NOTICIAS */
-
+/* hasta aca es todo el header */
 
 .noticias {
     padding: 70px 0;
     text-align: center;
+}
+
+h2 {
+    font-size: 45px;
+    line-height: 55px;
+    color: #1d1d1b;
+    margin-bottom: 15px;
 }
 
 .noticias_container {
@@ -171,6 +223,7 @@ body {
 }
 
 
+
 .section_1 {
     display: flex;
     align-items: center;
@@ -178,6 +231,7 @@ body {
     padding: 10px;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
 
 }
 
@@ -214,8 +268,6 @@ body {
     margin-top: auto; /* Alineamos el párrafo en la parte inferior */
 }
 
-
-/* BOTON DE CARGAR MAS */
 .btn_3 {
     
     background-color: #FF9000;
@@ -233,8 +285,7 @@ body {
     background-color: #b8b4ae;
 }
 
-
-/* INFORMACION */
+/* hasta aca es toda la section noticias */
 
 
 .informacion {
@@ -268,6 +319,24 @@ body {
     max-width: 90%;
 }
 
+
+
+.btn_2 {
+    background-color: #FF9000;
+    margin-top: 50px;
+    display: inline-block;
+    padding: 13px 35px;
+    border-radius: 25px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn_2:hover {
+    background-color: #696661;
+}
+
 .btn_info {
     display: inline-block;
     padding: 5px 25px;
@@ -282,11 +351,243 @@ body {
 }
 
 
-/*Footer */ 
+/* hasta aca es todo el main informacion */
 
 .footer {
-    
     padding: 50px 0;
+    background-color: #FF9000;
+
+}
+
+.footer_conteiner {
+    display: flex;
+    background-color: #FF9000;
+    justify-content: center;
+}
+
+.link h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.link li {
+    position: relative;
+    float: left;
+
+    font-size: 15px;
+    padding: 10px;
+    font-weight: 600;
+    color: #1d1d1b;
+    display: block;
+}
+
+.link a {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.firmas h4 {
+    padding-top: 25px;
+    color: #1d1d1b;
+    text-align: center;
+}
+
+.firmas h5 {
+    color: #1d1d1b;
+    text-align: center;
+}
+
+
+/* NUEVO */
+
+.seccion {
+	width: 90%; /* Ancho de cada sección */
+	margin: 10px auto; /* Margen entre las secciones */
+	padding: 10px; /* Espaciado interno de cada sección */
+	background-color: #dfdfdf; /* Color de fondo de cada sección */
+	border: 2px solid #ccc; /* Borde de 2px sólido en color gris */
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+	text-align: center;
+  
+}
+
+.seccion_menu{
+    padding: 80px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 45px;
+    border-radius: 25px;
+    background-color: #FF9000;
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: capitalize;
+    box-shadow: 0 0 20p rgb(0, 0, 0);
+    margin: 10px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #929190;
+}
+
+
+/* PROGRAMAS */
+
+.mi-tabla {	
+	
+	border: 2px solid #ccc;
+	
+	box-shadow: 2px 2px 5px rgba(11, 0, 43, 0.3);
+	
+	margin-right: 0px;
+	border-collapse: collapse;
+
+
+}
+
+.mi-tabla th {
+	padding: 10px;
+  }
+  
+.mi-tabla th {
+	background-color: #333;
+	color: white;
+  }
+
+.mi-tabla td {
+	text-align: center;
+	padding: 10px;
+	
+  }
+  
+  
+.mi-tabla tr:nth-child(even) {
+	background-color: #f2f2f2;
+  }
+  
+  .mi-tabla tr:hover {
+	background-color: #8692CD;
+    cursor: pointer;
+  }
+
+.tabla-programas {
+    width: 100%;
+    margin: 10px;
+    border: 2px solid #ccc;
+    border-collapse: collapse;
+    box-shadow: 2px 2px 5px rgba(11, 0, 43, 0.3);
+  
+}
+  
+.contenedor-tablas {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+  
+.tabla-programas td, .tabla-programas th {
+    padding: 5px;
+    font-size: 15px; /* Tamaño de fuente de las celdas de la tabla */  
+}
+
+
+.tabla-programas caption {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 7px;
+  background-color: #f5f5f5;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.tabla-programas th {
+  background-color: #333;
+  color: white;
+}
+
+.tabla-programas td {
+  text-align: center;
+  padding: 10px;
+  
+}
+
+
+.tabla-programas tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.tabla-programas tr:hover {
+  background-color: #8e91a0;
+  
+  cursor: pointer;
+}  
+
+.links button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+
+  
+  align-items: center;
+}
+
+.links button:hover {
+  background-color: #8692CD;
+}
+
+
+
+
+.mi-tabla {	
+	
+	border: 2px solid #ccc;
+	
+	box-shadow: 2px 2px 5px rgba(11, 0, 43, 0.3);
+	
+	margin-right: 0px;
+	border-collapse: collapse;
+
+
+}
+.mi-tabla th {
+	padding: 10px;
+  }
+  
+.mi-tabla th {
+	background-color: #333;
+	color: white;
+  }
+
+.mi-tabla td {
+	text-align: center;
+	padding: 10px;
+	
+  }
+    
+.mi-tabla tr:nth-child(even) {
+	background-color: #f2f2f2;
+  }
+  
+  .mi-tabla tr:hover {
+	background-color: #8692CD;
+    cursor: pointer;
+  }
+  
+/* Footer */
+
+.footer {
 	background-color: #7f82a0;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
@@ -323,207 +624,10 @@ body {
   }
   
 
-/* Seccion - alumnos, docentes y acuerdos*/
-
-.seccion {
-	width: 90%; /* Ancho de cada sección */
-	margin: 10px auto; /* Margen entre las secciones */
-	padding: 10px; /* Espaciado interno de cada sección */
-	background-color: #dfdfdf; /* Color de fondo de cada sección */
-	border: 2px solid #ccc; /* Borde de 2px sólido en color gris */
-	border-radius: 10px;
-	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-
-	text-align: center;
-  
-}
-
-.seccion_menu{
-    padding: 80px;
-}
-
-
-.btn {
-    display: inline-block;
-    padding: 13px 45px;
-    border-radius: 25px;
-    background-color: #FF9000;
-    font-size: 16px;
-    color: #ffffff;
-    text-transform: capitalize;
-    box-shadow: 0 0 20p rgb(0, 0, 0);
-    margin: 10px;
-    cursor: pointer;
-}
-
-.btn:hover{
-    background-color: #929190;
-}
-
-/* TABLAS DE PROGRAMAS */
-
-.tabla-programas { 
-    width: 100%;
-    margin: 10px;
-    border: 2px solid #ccc;
-    border-collapse: collapse;
-    box-shadow: 2px 2px 5px rgba(11, 0, 43, 0.3);
-  
-}
-
-.contenedor-tablas { /* para que este una al lado de la otra*/
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-}
-  
-.tabla-programas td, .tabla-programas th {
-    padding: 5px;
-    font-size: 15px; /* Tamaño de fuente de las celdas de la tabla */  
-}
-
-.tabla-programas caption {
-    font-weight: bold;
-    font-size: 20px;
-    padding: 7px;
-    background-color: #f5f5f5;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-  }
-
-  .tabla-programas th {
-    background-color: #333;
-    color: white;
-  }
-  
-  .tabla-programas td {
-    text-align: center;
-    padding: 10px;
-    
-  }
-  
-.tabla-programas tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  .tabla-programas tr:hover {
-    background-color: #8e91a0;
-    cursor: pointer;
-  }  
-
-
-  .links button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: bold;
-  
-    
-    align-items: center;
-  }
-  
-  .links button:hover {
-    background-color: #8692CD;
-  }
-  
-/* Tablas docentes */
-
-
-.mi-tabla {	
-    width: 100%;
-    margin: 10px;
-    border: 2px solid #ccc;
-    border-collapse: collapse;
-    box-shadow: 2px 2px 5px rgba(11, 0, 43, 0.3);
-
-}
-
-.mi-tabla caption {
-  font-weight: bold;
-  font-size: 20px;
-  padding: 7px;
-  background-color: #f5f5f5;
-  border: 2px solid #ccc;
-  box-shadow: 2px 2px 5px rgba(11, 0, 43, 0.3);
-}
-
-.mi-tabla td {  
-    padding: 10px;
-    font-size: 15px; /* Tamaño de fuente de las celdas de la tabla */  
-	text-align: center;
-  }
-
-.mi-tabla th {
-    padding: 10px;
-    font-size: 15px; /* Tamaño de fuente de las celdas de la tabla */  
-	text-align: center;
-    background-color: #939292;
-}
-  
-    
-.mi-tabla tr:nth-child(even) {
-	background-color: #ffffff;
-  }
-  
-.mi-tabla tr:hover {
-	background-color: #a6a6a8;
-    cursor: pointer;
-  }
-
-.linksD button{    
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 15px;
-  font-weight: bold;
-
-  align-items: center;
-}
-
-.linksD button:hover {
-    background-color: #032dff;
-}
-
-/* frame */
 .frame {
-    padding: 15px;
-
-}
-
-
-/* Titulos */
-
-h1 { /*titulos para seccion 2*/
-    font-size: 30px;
-    padding-top: 10px;
-    margin-bottom: 15px;
-}
-
-h2 {
-    font-size: 45px;
-    line-height: 55px;
-    color: #1d1d1b;
-    margin-bottom: 15px;
-}
-
-h3 {
-
-}
-
-h4 { /* texto */
-    font-size: 16px;
-    margin-bottom: 10px;
-    color: #3c3c3c;
-
-}
-
-h5 {
+    border: 1px solid #000000;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
 
 }

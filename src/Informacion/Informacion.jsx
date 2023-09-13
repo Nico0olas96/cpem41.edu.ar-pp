@@ -50,7 +50,7 @@ class Informacion extends Component {
                     </div>
 
                     {informacionVisible < informacion.length && 
-                        ( <div className='btn_2' onClick={this.cargarI}> Cargar Mas </div> )
+                        ( <div className='btn_3' onClick={this.cargarI}> Cargar Mas </div> )
                     }
 
                 </div>

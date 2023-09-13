@@ -3,9 +3,9 @@ import React from 'react';
 const HorasTomadas = () => {
     return (
         <div>
-                        <div className='contenedor-tablas'>
+        <div className='contenedor-tablas'>
 
-            <table className='tabla-programas'>
+            <table className='mi-tabla'>
 
                 <caption> Alta Con Número de Empleado </caption>
                 
@@ -30,7 +30,7 @@ const HorasTomadas = () => {
 
             </table>
 
-            <table className='tabla-programas'>
+            <table className='mi-tabla'>
 
                 <caption> Alta Sin Número de Empleado </caption>
 

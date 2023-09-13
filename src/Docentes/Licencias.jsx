@@ -1,22 +1,14 @@
-import React, { useRef } from 'react';
+import React, { } from 'react';
 
 const Licencias = () => {
-
-    
-    const iframeRef = useRef(null);
-
-    const obtenerAltoIframe = () => {
-        if (iframeRef.current) {
-        const altoIframe = iframeRef.current.offsetHeight;
-            console.log(`El alto del iframe es: ${altoIframe}px`);
-        }
-    };
 
     
     return (
         <div className='seccion'>
 
-            <h2> Licencias </h2>
+            <h1> Licencias </h1>
+
+            <h4> Para solicitar una Licencia debera completar el siguiente formulario </h4>
             
             <div className='frame'>
 

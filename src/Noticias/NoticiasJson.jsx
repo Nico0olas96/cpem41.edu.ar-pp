@@ -4,7 +4,7 @@ const NoticiasJson = [
     {
         titulo: "Facultad de Informática",
         descripcion: "Facultad de Informática Universidad Nacional del Comahue",
-        img: "/imagenes/probando noticia.jpg",
+        img: "/Imagenes/universidad del comahue.png",
         link: "https://www.fi.uncoma.edu.ar"
     },
     {
