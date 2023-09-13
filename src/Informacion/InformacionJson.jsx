@@ -11,7 +11,7 @@ const InformacionJson = [
         titulo:"Titulo 1",
         descripcion:"descripcion 1",
         img:"",
-        link:"",
+        link:"https://nico0olas96.github.io/cpem41.edu.ar-pp/",
     },
     {
         titulo:"Titulo 2",

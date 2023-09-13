@@ -9,7 +9,9 @@ class Alumnos extends Component {
         return (
             <div className='seccion_menu'>
                 <div className='seccion'>
-                    <h2>Alumnos</h2>
+                    <h2>Seccion de ALUMNOS</h2>
+
+                    <h4>¿A Que Turno Asistis?</h4>
 
 
                     <Link to='/Alumno/TD/TurnoDiurno' className='btn'> Turno Diurno </Link>

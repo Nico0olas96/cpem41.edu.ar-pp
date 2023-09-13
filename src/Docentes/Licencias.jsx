@@ -6,7 +6,7 @@ const Licencias = () => {
     return (
         <div className='seccion'>
 
-            <h1> Licencias </h1>
+            <h1> LICENCIA</h1>
 
             <h4> Para solicitar una Licencia debera completar el siguiente formulario </h4>
             

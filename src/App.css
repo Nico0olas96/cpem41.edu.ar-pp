@@ -175,7 +175,7 @@ body {
 .section_1 {
     display: flex;
     align-items: center;
-    background-color: #ef8700;
+    background-color: #202447;
     padding: 10px;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -206,7 +206,7 @@ body {
 
 .btn_noticia {
     padding: 5px 25px;
-    background-color: #FF9000;
+    background-color: #202447;
     color: #ffffff;
     border-radius: 10px;
     text-align: center;
@@ -215,11 +215,15 @@ body {
     margin-top: auto; /* Alineamos el párrafo en la parte inferior */
 }
 
+.btn_noticia:hover {
+    background-color: #b5bbff;
+}
+
 
 /* BOTON DE CARGAR MAS */
 .btn_3 {
     
-    background-color: #FF9000;
+    background-color: #202447;
     margin-top: 50px;
     display: inline-block;
     padding: 13px 35px;
@@ -231,7 +235,7 @@ body {
 }
 
 .btn_3:hover {
-    background-color: #b8b4ae;
+    background-color: #b5bbff;
 }
 
 
@@ -259,8 +263,9 @@ body {
 
 .Informacion_2 p {
     font-size: 15px;
-    color: #FF9000;
+    color: #2b3163;
     padding: 30px;
+    font-weight: bold;
 }
 .Informacion_2 h3 {
     font-size: 22px;
@@ -273,14 +278,14 @@ body {
 .btn_info {
     display: inline-block;
     padding: 5px 25px;
-    background-color: #FF9000;
+    background-color: #202447;
     color: #ffffff;
     border-radius: 10px;
     
 }
 
 .btn_info:hover {
-    background-color: #3c3a38;
+    background-color: #b5bbff;
 }
 
 
@@ -384,7 +389,7 @@ body {
     display: inline-block;
     padding: 13px 45px;
     border-radius: 25px;
-    background-color: #FF9000;
+    background-color: #202447;
     font-size: 16px;
     color: #ffffff;
     text-transform: capitalize;
@@ -394,7 +399,7 @@ body {
 }
 
 .btn:hover{
-    background-color: #929190;
+    background-color: #b4bbfb;
 }
 
 /* TABLAS DE PROGRAMAS */
@@ -525,7 +530,7 @@ body {
 }
 
 .linksD button:hover {
-    background-color: #032dff;
+    background-color: #4554fa;
 }
 
 /* frame */

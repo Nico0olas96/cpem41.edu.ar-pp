@@ -20,7 +20,7 @@ const InformacionJson = ({tituloI, descriipcionI, imgI, linkI}) => {
                     )}
 
                     {linkI !== '' && (
-                        <a href={linkI} className='btn_info'>Click Aqui</a>
+                        <a href={linkI} className='btn_info' target='__blank' >Click Aqui</a>
                     )}
 
                 </div>

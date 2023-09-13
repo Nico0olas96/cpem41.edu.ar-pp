@@ -6,7 +6,7 @@ const Tercero = () => {
 
             <h1>PROGRAMAS DE ESTUDIOS - 2023</h1>
 
-            <h3>Materias Plan Institucional - 3er y 4to año</h3>
+            <h4>Materias Plan Institucional - 3er y 4to año</h4>
 
             <div className="contenedor-tablas">
 

@@ -4,9 +4,9 @@ const PrimeroSegundo = () => {
     return (
         <div className='seccion'>		
 
-            <h1>PROGRAMAS DE ESTUDIOS - 2023 - Previa / Libre / Regular</h1>
+            <h1>PROGRAMAS DE ESTUDIOS - 2023 - Previa / Libre / Regular </h1>
 
-            <h3>Materias Plan Institucional - 1er y 2do año</h3>	
+            <h4>Materias Plan Institucional - 1er y 2do año</h4>	
         
         <div className="contenedor-tablas">
         <table className="tabla-programas">

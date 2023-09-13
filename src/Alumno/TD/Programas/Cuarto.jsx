@@ -5,7 +5,7 @@ const Cuarto = () => {
         <div className='seccion'>
 			<h1>PROGRAMAS DE ESTUDIOS - 2023 - Previa / Libre / Regular</h1>
 
-            <h3>Materias Plan Institucional - 4to año</h3>
+            <h4>Materias Plan Institucional - 4to año</h4>
 
             <div className="contenedor-tablas">
 			<table className="tabla-programas">
@@ -128,7 +128,7 @@ const Cuarto = () => {
 				<tr>
 
 					<td>Edicacion Fisica</td>
-					<td><a href="https://drive.google.com/drive/folders/1E2gdl6UWjbVuia6Rh3_Dg6KFOT9wUeeO?usp=drive_link" target="_blank" className="links" ><button>Click Aca</button></a></td>
+					<td><a href="https://drive.google.com/drive/folders/1E2gdl6UWjbVuia6Rh4_Dg6KFOT9wUeeO?usp=drive_link" target="_blank" className="links" ><button>Click Aca</button></a></td>
 
 				</tr>
 				

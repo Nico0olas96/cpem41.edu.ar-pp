@@ -4,11 +4,9 @@ const Mesas = () => {
     return (
         <div className='seccion'>
 
-            <h1>MESAS</h1>
-
-            <h1>CRONOGRAMA DE MESAS DE EXAMENES - TURNO DIURNO</h1>
-            <h3> PREVIOS, LIBRES Y EQUIVALENTES </h3>
-            <h3>JULIO 2023, DICIEMBRE 2023 Y FEBRERO 2024</h3>
+            <h1>CRONOGRAMA DE MESAS DE EXAMENES</h1>
+            <h4> PREVIOS, LIBRES Y EQUIVALENTES </h4>
+            <h4>JULIO 2023, DICIEMBRE 2023 Y FEBRERO 2024</h4>
 
             <div className="contenedor-tablas">
             <table className="mi-tabla">
