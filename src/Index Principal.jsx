@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { HashRouter, Link, Route, Routes } from 'react-router-dom';
 
 import Menu from './Menus/Menu'
 import Inicio from './Menus/Inicio'
@@ -15,7 +15,6 @@ import Footerr from './Footerr'
 
 import TurnoDiurno from './Alumno/TD/TurnoDiurno'
 import TurnoVespertino from './Alumno/TV/TurnoVespertino';
-import DeclaracionesJuradas from './Docentes/Declaraciones Juradas';
 
 
 class IndexPrincipal extends Component {
@@ -25,10 +24,8 @@ class IndexPrincipal extends Component {
         return (
             <div>
 
-                
 
                 <Menu/>
-
 
                 <Routes>
                     <Route path='/' element={<Cpem41/>}/>
@@ -48,7 +45,6 @@ class IndexPrincipal extends Component {
 
 
                 <Footerr/>
-
 
 
             </div>
