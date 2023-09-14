@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/cpem41.edu.ar-pp/static/css/main.639760fb.css",
+    "main.css": "/cpem41.edu.ar-pp/static/css/main.12885ca5.css",
     "main.js": "/cpem41.edu.ar-pp/static/js/main.2a4ad9ad.js",
     "static/js/787.8f681b8d.chunk.js": "/cpem41.edu.ar-pp/static/js/787.8f681b8d.chunk.js",
     "static/media/Escuela de frente.png": "/cpem41.edu.ar-pp/static/media/Escuela de frente.2d0c129d87f1d36ccbfa.png",
     "static/media/logo Cpem41.jpg": "/cpem41.edu.ar-pp/static/media/logo Cpem41.56f801972d6bd67ba2cb.jpg",
     "index.html": "/cpem41.edu.ar-pp/index.html",
-    "main.639760fb.css.map": "/cpem41.edu.ar-pp/static/css/main.639760fb.css.map",
+    "main.12885ca5.css.map": "/cpem41.edu.ar-pp/static/css/main.12885ca5.css.map",
     "main.2a4ad9ad.js.map": "/cpem41.edu.ar-pp/static/js/main.2a4ad9ad.js.map",
     "787.8f681b8d.chunk.js.map": "/cpem41.edu.ar-pp/static/js/787.8f681b8d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.639760fb.css",
+    "static/css/main.12885ca5.css",
     "static/js/main.2a4ad9ad.js"
   ]
 }
