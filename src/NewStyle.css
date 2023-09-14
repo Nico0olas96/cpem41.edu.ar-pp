@@ -1,4 +1,229 @@
 
+/* Estilos para pantallas grandes (más de 1300px) */
+@media (min-width: 1300px) {
+    .container {
+        max-width: 1300px; /* Limita el ancho máximo */
+    }
+    .header {
+        min-height: 100vh; /* Aumenta la altura del encabezado para pantallas grandes */
+    }
+
+
+}
+
+/* Estilos para pantallas grandes (más de 1300px) */
+@media (min-width: 1300px) {
+    .menu {
+        background-color: transparent; /* Cambia el color de fondo para pantallas grandes si es necesario */
+        box-shadow: none; /* Elimina la sombra en pantallas grandes si es necesario */
+    }
+
+    .menu .nav_menu ul li {
+        margin-right: 30px; /* Aumenta el espacio entre elementos de menú en pantallas grandes si es necesario */
+    }
+
+    .menu .nav_menu ul li a {
+        font-size: 16px; /* Ajusta el tamaño de fuente para elementos de menú en pantallas grandes si es necesario */
+        padding: 25px; /* Aumenta el espaciado en elementos de menú en pantallas grandes si es necesario */
+    }
+
+    .menu .logo {
+        font-size: 30px; /* Ajusta el tamaño de fuente del logo en pantallas grandes si es necesario */
+    }
+}
+/* Estilos para pantallas grandes (más de 1300px) */
+@media (min-width: 1300px) {
+    .conteiner_header {
+        flex-direction: row; /* Alinea los elementos en fila en pantallas grandes */
+    }
+
+    .txt_header {
+        width: 60%; /* Ajusta el ancho del texto en pantallas grandes si es necesario */
+        margin-right: 60px; /* Aumenta el margen derecho en pantallas grandes si es necesario */
+    }
+
+    .txt_header h1 {
+        font-size: 65px; /* Ajusta el tamaño de fuente del encabezado en pantallas grandes si es necesario */
+        line-height: 75px; /* Ajusta la altura de línea en pantallas grandes si es necesario */
+        margin-bottom: 45px; /* Aumenta el margen inferior en pantallas grandes si es necesario */
+    }
+
+    .txt_header p {
+        font-size: 18px; /* Ajusta el tamaño de fuente del párrafo en pantallas grandes si es necesario */
+        margin-bottom: 55px; /* Aumenta el margen inferior en pantallas grandes si es necesario */
+    }
+
+    .img_header img {
+        width: 800px; /* Ajusta el ancho de la imagen en pantallas grandes si es necesario */
+        margin-bottom: 20px; /* Aumenta el margen inferior en pantallas grandes si es necesario */
+    }
+}
+/* Estilos para pantallas grandes (más de 1300px) */
+@media (min-width: 1300px) {
+    .noticias_container {
+        justify-content: flex-start; /* Cambia la alineación del contenido al inicio del contenedor */
+    }
+
+    .noticias_2 {
+        width: 300px; /* Ajusta el ancho de las noticias en pantallas grandes si es necesario */
+        margin-right: 20px; /* Agrega margen derecho entre las noticias en pantallas grandes */
+    }
+}
+
+
+/* Estilos para pantallas grandes (más de 1300px) */
+@media (min-width: 1300px) {
+    .btn_3 {
+        padding: 15px 40px; /* Aumenta el espaciado del botón en pantallas grandes si es necesario */
+        margin-top: 30px; /* Ajusta el margen superior del botón en pantallas grandes si es necesario */
+    }
+}
+/* Estilos para pantallas grandes (más de 1300px) */
+@media (min-width: 1300px) {
+    .informacion_container {
+        grid-template-columns: repeat(2, 1fr); /* Divide en 2 columnas en pantallas grandes */
+        gap: 40px; /* Aumenta el espacio entre los elementos en pantallas grandes si es necesario */
+    }
+
+    .informacion_container_2 {
+        padding: 30px; /* Aumenta el espacio de relleno en elementos individuales en pantallas grandes */
+    }
+
+    .Informacion_2 p {
+        font-size: 16px; /* Ajusta el tamaño de fuente del párrafo en pantallas grandes si es necesario */
+        padding: 20px; /* Aumenta el espaciado del párrafo en pantallas grandes si es necesario */
+    }
+
+    .Informacion_2 h3 {
+        font-size: 26px; /* Ajusta el tamaño de fuente del título en pantallas grandes si es necesario */
+    }
+
+    .btn_info {
+        margin-top: 20px; /* Ajusta el margen superior del botón en pantallas grandes si es necesario */
+    }
+}
+/* Estilos para pantallas grandes (más de 1300px) */
+@media (min-width: 1300px) {
+    .grupo-1 {
+        grid-template-columns: repeat(4, 1fr); /* Divide en 4 columnas en pantallas grandes */
+    }
+
+    .box {
+        width: auto; /* Cambia el ancho del elemento a "auto" para ajustar el contenido */
+    }
+
+    .box img {
+        width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+        height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    }
+
+    .contacto-info {
+        height: auto; /* Ajusta la altura automáticamente según el contenido */
+    }
+}
+/* Estilos para pantallas grandes (más de 1300px) */
+@media (min-width: 1300px) {
+    .seccion {
+        width: 60%; /* Ajusta el ancho de cada sección en pantallas grandes si es necesario */
+        margin: 20px auto; /* Aumenta el margen entre las secciones en pantallas grandes si es necesario */
+        padding: 20px; /* Aumenta el espaciado interno de cada sección en pantallas grandes si es necesario */
+    }
+
+    .seccion_menu {
+        padding: 100px; /* Aumenta el espaciado interno en la sección de menú en pantallas grandes si es necesario */
+    }
+
+    .btn {
+        padding: 15px 55px; /* Aumenta el espaciado del botón en pantallas grandes si es necesario */
+        font-size: 18px; /* Ajusta el tamaño de fuente del botón en pantallas grandes si es necesario */
+        margin: 20px; /* Aumenta el margen entre los botones en pantallas grandes si es necesario */
+    }
+}
+/* Estilos para pantallas grandes (más de 1300px) */
+@media (min-width: 1300px) {
+    .tabla-programas {
+        width: 80%; /* Ajusta el ancho de la tabla en pantallas grandes si es necesario */
+        margin: 20px auto; /* Aumenta el margen entre la tabla y otros elementos en pantallas grandes si es necesario */
+    }
+
+    .contenedor-tablas {
+        flex-direction: row; /* Cambia la dirección de la disposición de flex a fila en pantallas grandes */
+        justify-content: space-between; /* Espacio entre las tablas en pantallas grandes */
+    }
+
+    .tabla-programas td, .tabla-programas th {
+        font-size: 18px; /* Ajusta el tamaño de fuente de las celdas de la tabla en pantallas grandes si es necesario */
+        padding: 10px; /* Aumenta el espaciado en las celdas de la tabla en pantallas grandes si es necesario */
+    }
+
+    .links button {
+        padding: 15px 30px; /* Aumenta el espaciado del botón en pantallas grandes si es necesario */
+        font-size: 18px; /* Ajusta el tamaño de fuente del botón en pantallas grandes si es necesario */
+    }
+}
+/* Estilos para pantallas grandes (más de 1300px) */
+@media (min-width: 1300px) {
+    .mi-tabla {
+        width: 80%; /* Ajusta el ancho de la tabla en pantallas grandes si es necesario */
+        margin: 20px auto; /* Aumenta el margen entre la tabla y otros elementos en pantallas grandes si es necesario */
+    }
+
+    .mi-tabla caption {
+        font-size: 22px; /* Ajusta el tamaño de fuente del título de la tabla en pantallas grandes si es necesario */
+        padding: 10px; /* Aumenta el espaciado del título de la tabla en pantallas grandes si es necesario */
+    }
+
+    .mi-tabla td, .mi-tabla th {
+        font-size: 18px; /* Ajusta el tamaño de fuente de las celdas de la tabla en pantallas grandes si es necesario */
+        padding: 15px; /* Aumenta el espaciado en las celdas de la tabla en pantallas grandes si es necesario */
+    }
+
+    .linksD button {
+        padding: 15px 30px; /* Aumenta el espaciado del botón en pantallas grandes si es necesario */
+        font-size: 18px; /* Ajusta el tamaño de fuente del botón en pantallas grandes si es necesario */
+    }
+
+    /* Ajustes de tamaño de fuente para los títulos en pantallas grandes si es necesario */
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap'); 
 
 *{
@@ -630,4 +855,61 @@ h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 10px;
 
+}
+
+
+
+/**   emneu
+*/
+.menu {
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff; /* Color de fondo deseado */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Agrega sombra si lo deseas */
+ 
+
+}
+
+
+.logo {
+    font-size: 25px;
+    color: #6775f8;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.menu .nav_menu ul li {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+
+.menu .nav_menu ul li a{
+    font-size: 14px;
+    padding: 20px;
+    font-weight: 600;
+    color: #1d1d1b;
+    display: block;
+
+}
+
+.menu .nav_menu ul li a:hover {
+    background-color: #b5bbff;
+}
+
+.menu_icono {
+    width: 25px; 
+}
+
+#menu {
+    display: none;
 }

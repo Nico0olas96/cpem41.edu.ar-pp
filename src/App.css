@@ -25,6 +25,7 @@ body {
     max-width: 95%;
     margin: 0 auto;
 
+
 }
 
 .header {
@@ -45,7 +46,7 @@ body {
     justify-content: space-between;
     z-index: 1000;
 
-    position: fixed;
+   /* position: fixed;  ver si poner o no por tema que falta el footer*/
     width: 100%;
     background-color: #ffffff; /* Color de fondo deseado */
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Agrega sombra si lo deseas */
@@ -81,10 +82,21 @@ body {
     background-color: #b5bbff;
 }
 
-
 .menu_icono {
     width: 25px; 
 }
+
+#menu {
+    display: none;
+}
+
+
+
+
+
+
+
+
 
 /* esconder icono menu */
 .menu label {
@@ -563,3 +575,91 @@ h4 { /* texto */
 
 }
 
+@media (max-width:1000px) {
+
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .nav_menu {
+        position: absolute;
+        top: 100%;
+        background-color: #949494;
+        display: none;
+    }
+
+    .nav_menu ul li {
+        width: 100%;
+    }
+
+    .nav_menu ul li Link:hover {
+        color: #ffffff;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    #menu:checked ~ .nav_menu {
+        display: initial;
+    }
+    
+    .conteiner_header {
+        padding: 100px 30px 30px 30px;
+        flex-direction: column;
+    }
+
+    .txt_header{
+        text-align: center;
+        width: 100%;
+        margin: 0 0 25px 0;
+    }
+
+    .txt_header h1 {
+        font-size: 45px;
+        line-height: 55px;
+        margin-bottom: 20px;
+    }
+    .txt_header p {
+        margin-bottom: 20px;
+    }
+
+    .img_header{
+        width: 100%;
+        text-align: center;
+    }
+
+    .img_header img {
+        width: 300px;
+    }
+
+
+    .noticias_container{
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .noticias_2{
+        justify-content: space-between;
+        padding: 10px 55px;
+        margin-bottom: 25px;
+    }
+
+    .informacion_container{         
+        padding: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+
+
+
+
+}

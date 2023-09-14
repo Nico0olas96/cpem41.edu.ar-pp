@@ -5,14 +5,17 @@ import menuIcono from '../Imagenes/menu.png'
 
 
 class Menu extends Component {
+
+    
+
     render() {
         return (
             <div>
                 <div className='menu container'>
 
                     <Link to="/" className="logo" alt="Logo-Cpem41">Cpem41</Link>
-
-                    <label className='menu'>
+                    <input type='checkbox'id='menu'/>
+                    <label htmlFor='menu'>
                         <img src={menuIcono} className='menu_icono' alt=''/>
                     </label>
 
