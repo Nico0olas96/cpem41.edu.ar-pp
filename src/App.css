@@ -182,51 +182,41 @@ body {
 .noticias_2 {
     display: flex;
     flex-direction: column;
-    border: 1px solid #ccc;
+    border: 1px solid #6775f8;
     border-radius: 10px;
     padding: 10px;
     height: 350px; /* Establece una altura fija */
-    width: 250px;
+    width: 300px;
     box-sizing: border-box;
     margin-bottom: 20px; /* Agrega margen inferior para separar las noticias */
 }
 
 
-.section_1 {
-    display: flex;
-    align-items: center;
-    background-color: #202447;
-    padding: 10px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-
-}
-
-.section_1 h3 {
-    font-size: 15px;
-    color: #ffffff;
-    font-weight: 600;
-    margin-bottom: 10px; /* Agregamos un margen inferior al título */
-}
-
-.section_1 img {
-    width: 90px;
+.noticias_2 img {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
     margin-bottom: 10px;
+}
+
+.noticias_2 h3 {
+    font-size: 15px;
+    color: #6775f8;
+    margin-bottom: 10px; /* Agregamos un margen inferior al título */
 }
 
 .noticias_2 p {
     font-size: 14px;
     color: #2c3e50;
     text-align: center;
-    margin: 10px; /* Agregamos margen inferior al párrafo */
-    
-    overflow-y: auto; /* Habilita el desbordamiento vertical y muestra una barra de desplazamiento si es necesario */
-
+    overflow-y: auto;
+    margin: 0; /* Elimina el margen predeterminado para que el párrafo ocupe todo el ancho */
+    flex-grow: 1; /* Hace que el párrafo ocupe todo el espacio vertical disponible */
 }
 
 .btn_noticia {
     padding: 5px 25px;
-    background-color: #202447;
+    background-color: #6775f8;
     color: #ffffff;
     border-radius: 10px;
     text-align: center;
@@ -600,7 +590,6 @@ h4 { /* texto */
         display: initial;
         position: relative; /* Agregar posición relativa para establecer z-index */
         z-index: 2; /* Establecer z-index mayor para el icono del menú */
-        
     }
 
     .nav_menu {
@@ -611,7 +600,7 @@ h4 { /* texto */
         background-color: #949494;
         display: none;
         z-index: 1;
-        
+            
     }
 
     .nav_menu ul li {
@@ -626,6 +615,7 @@ h4 { /* texto */
         display: none;
     }
 
+    
     #menu:checked ~ .nav_menu {
         display: initial;
     }
@@ -701,9 +691,66 @@ h4 { /* texto */
     }
 
 
+    .seccion {
+        width: 100%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .seccion_menu {
+        padding: 5px;
+    }
+
+    .btn {
+        padding: 10px;
+    }
+
+    .tabla-programas {
+        width: 100%;
+        margin: auto;
+        border-collapse: collapse;
+        
+        
+    }
+
+    .contenedor-tablas{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        flex-direction: column; /* Apila las tablas una encima de la otra */
+
+        margin: auto;
+    }
+    
+    .tabla-programas td th {
+        padding: 10px;
+    }
+
+    .links button {
+        padding: 10px 30px;
+    }
+
+    .mi-tabla {
+        border-collapse: collapse;
+        margin: 0;
+        padding: 5px;
+
+    }
+    
+    .mi-tabla th, .mi-tabla td {
+        padding: 5px;
+        font-size: 7px;
+    }
+
+    
+
+    .linksD button {
+        padding: 10px 15px;
+        font-size: 10px;
+    }
 
 
-
+    
 
 
 }

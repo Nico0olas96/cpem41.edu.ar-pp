@@ -10,7 +10,7 @@ class Noticias extends Component {
         this.state = {
             noticias : NoticiasJson ,
 
-            noticiasVesibles : 4
+            noticiasVesibles : 3
 
         }
     }
@@ -18,7 +18,7 @@ class Noticias extends Component {
 
     cargarContenido = () => {
         this.setState (prevState => ({
-           noticiasVesibles : prevState.noticiasVesibles + 4  
+           noticiasVesibles : prevState.noticiasVesibles + 3 
         }))
     }
 

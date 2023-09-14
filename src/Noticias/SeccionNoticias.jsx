@@ -16,10 +16,10 @@ const SeccionNoticias = ({tituloN, descripcionN, imgN, linkN}) => {
                         :
                         ( <img src={imgPreterminada} alt='imagen preterminada'/> ) 
                     }
-
-                    <h3> {tituloN} </h3>
                 
                 </div>
+                
+                <h3> {tituloN} </h3>
                 
                 <p>
                     {descripcionN}

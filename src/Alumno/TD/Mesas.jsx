@@ -8,7 +8,7 @@ const Mesas = () => {
             <h4> PREVIOS, LIBRES Y EQUIVALENTES </h4>
             <h4>JULIO 2023, DICIEMBRE 2023 Y FEBRERO 2024</h4>
 
-            <div className="contenedor-tablas">
+            <div className="contenedor-tablas" >
             <table className="mi-tabla">
                 <tr>
                 <th>ASIGNATURA</th>

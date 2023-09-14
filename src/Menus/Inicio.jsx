@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import Header from '../Header'
 import Noticias from '../Noticias/Noticias'
 import Informacion from '../Informacion/Informacion'
 
