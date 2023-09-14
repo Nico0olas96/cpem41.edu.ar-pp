@@ -7,6 +7,23 @@ class Footerr extends Component {
         return (
             <div>
                 <div className='pie-pagina'>
+
+                    <div className='boxC'>
+                        <h2>CONTACTO</h2>
+
+                        <div className="contacto-info">
+                            <div>
+                                <p>Email:</p>
+                                <p>Teléfono:</p>
+                                <p>Direecion:</p>
+                            </div>
+                            <div>
+                                <p><a href="mailto:cpem41secretaria@gmail.com">cpem41secretaria@gmail.com</a></p>
+                                <p><a href="tel:+542994401509">0299 - 4401509</a></p>
+                                <p><a href='https://maps.app.goo.gl/SJCuYfYwXeTjiYCFA' target='_blank'>Int. Pedro Linares 760</a></p>
+                            </div>
+                        </div>
+                    </div>
                     <div className='grupo-1'>
                         <div className='box'>
                             

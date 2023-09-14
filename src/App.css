@@ -84,6 +84,14 @@ body {
 
 .menu_icono {
     width: 25px; 
+
+    font-size: 25px;
+    color: #6775f8;
+    text-transform: uppercase;
+    font-weight: 800;
+
+
+        
 }
 
 #menu {
@@ -327,23 +335,23 @@ body {
 
     flex-direction: column;
 }
-.box a {
+.pie-pagina a {
     color: #b4ccf8;
 }
-.box h2{
+.pie-pagina h2{
     color: #fff;
     margin-bottom: 15px;
     font-size: 17px;
 }
 
-.box p{
+.pie-pagina p{
     color: #efefef;
     margin-bottom: 20px;
     font-size: 15px;
     
 }
 
-.box img {
+.pie-pagina img {
     width: 400px;
     height: 250px;
 }
@@ -373,6 +381,13 @@ body {
     height: 250px;
 }
 
+.boxC {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+}
 
 
 
@@ -583,13 +598,20 @@ h4 { /* texto */
 
     .menu label {
         display: initial;
+        position: relative; /* Agregar posición relativa para establecer z-index */
+        z-index: 2; /* Establecer z-index mayor para el icono del menú */
+        
     }
 
     .nav_menu {
-        position: absolute;
-        top: 100%;
+        position: absolute; /* Cambiar de absolute a fixed */
+        top: 80px; /* Colocar el menú en la parte superior */
+        left: 0;
+        right: 0;
         background-color: #949494;
         display: none;
+        z-index: 1;
+        
     }
 
     .nav_menu ul li {
@@ -654,6 +676,28 @@ h4 { /* texto */
         padding: 30px;
         flex-direction: column;
         align-items: center;
+    }
+
+    /* Acomodando Footer */
+    
+    .pie-pagina {
+        padding: 5px; /* Reducir el espaciado inferior */
+    }
+
+    .box {
+        display: none;
+    }
+
+    .grupo-1 .contacto-info {
+        display: initial;
+    }
+
+    .box {
+        padding: 10px; /* Añadir un poco más de espaciado interno */
+    }
+
+    .boxC {
+        display: initial;
     }
 
 

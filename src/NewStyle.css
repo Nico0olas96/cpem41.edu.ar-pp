@@ -913,3 +913,76 @@ h2 {
 #menu {
     display: none;
 }
+
+
+/*Footer */ 
+.pie-pagina{	
+    width: 100%;
+    background-color: #0e243a;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+.grupo-1{
+    width: 100%;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:20px;
+    padding: 10px;
+}
+
+.box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+.box a {
+    color: #b4ccf8;
+}
+.box h2{
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.box p{
+    color: #efefef;
+    margin-bottom: 20px;
+    font-size: 15px;
+    
+}
+
+.box img {
+    width: 400px;
+    height: 250px;
+}
+
+.grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+
+}
+
+.grupo-2 h3 {
+    font-size: 20px;
+}
+
+.grupo-2 h5 {
+    font-size: 12px;
+}
+
+.contacto-info {
+    display: grid;
+    grid-template-columns: max-content auto; /* Primera columna para los títulos, segunda columna para los datos */
+    gap: 5px; /* Espacio entre elementos */
+    align-items: center; /* Alinea el contenido verticalmente */
+    
+    height: 250px;
+}

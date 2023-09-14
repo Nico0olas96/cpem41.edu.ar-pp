@@ -25,7 +25,10 @@ const HorasTomadas = () => {
                     <td> Declaración Jurada de Datos Personales  </td>                        
                 </tr>
                 <tr>
-                    <td> Actualizacion Domicilio </td>                        
+                    <td> Actualización Domicilio </td>                        
+                </tr>
+                <tr>
+                    <td> Cuaderno de actuacion </td>                        
                 </tr>
 
             </table>
@@ -50,7 +53,7 @@ const HorasTomadas = () => {
                     <td> Declaración Jurada de Datos Personales  </td>                        
                 </tr>
                 <tr>
-                    <td> Actualizacion Domicilio </td>                        
+                    <td> Actualización Domicilio </td>                        
                 </tr>
                 <tr>
                     <td> Circular N°19 </td>                        
@@ -64,6 +67,12 @@ const HorasTomadas = () => {
                 <tr>
                     <td> Constancia de últimos Votos o Constancia de no Infractor </td>                        
                 </tr>
+                <tr>
+                    <td> Certificado médico de aptitud física </td>                        
+                </tr>
+                <tr>
+                    <td> Cuaderno de actuacion </td>                        
+                </tr>
 
             </table>
 
@@ -73,3 +82,5 @@ const HorasTomadas = () => {
 }
 
 export default HorasTomadas;
+
+

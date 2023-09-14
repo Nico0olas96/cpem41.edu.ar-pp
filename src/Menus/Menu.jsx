@@ -18,6 +18,9 @@ class Menu extends Component {
                     <label htmlFor='menu'>
                         <img src={menuIcono} className='menu_icono' alt=''/>
                     </label>
+                    <label htmlFor='menu'>
+                        <Link to="/" className="menu_icono" alt="Logo-Cpem41">Cpem41</Link>
+                    </label>
 
                     <nav className='nav_menu'>
 
