@@ -22,9 +22,13 @@ class Menu extends Component {
     };
 
     render() {
+
         const { menuOpen } = this.state;
 
+
         return (
+
+            
             <div>
                 <div className='menu container'>
 
@@ -34,7 +38,7 @@ class Menu extends Component {
 
                     <input type='checkbox' id='menu' checked={menuOpen} onChange={this.verMenu} />
 
-                    <label htmlFor='menu' onClick={this.verMenu}>
+                    <label htmlFor='menu'>
                         <img src={menuIcono} className='menu_icono' alt='' />
                     </label> 
                     

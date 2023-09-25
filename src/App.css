@@ -46,7 +46,7 @@ body {
     justify-content: space-between;
     z-index: 1000;
 
-   /* position: fixed;  ver si poner o no por tema que falta el footer*/
+    position: fixed; /* ver si poner o no por tema que falta el footer*/
     width: 100%;
     background-color: #ffffff; /* Color de fondo deseado */
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Agrega sombra si lo deseas */
@@ -129,13 +129,19 @@ body {
     font-size: 55px;
     line-height: 65px;
     color: #1d1d1b;
-    margin-bottom: 35px;
+}
+.txt_header h2 {
+    font-size: 55px;
+    line-height: 65px;
+    color: #1d1d1b;
 }
 
 .txt_header p {
-    font-size: 16px;
+    font-size: 18px;
     color: #5e5e5e;
     margin-bottom: 45px;
+    margin-top: 30px;
+    text-align: justify;
 }
 
 .txt_header span {
@@ -146,7 +152,7 @@ body {
     display: inline-block;
     padding: 13px 45px;
     border-radius: 25px;
-    background-color: #202447;
+    background-color: #6775f8;
     font-size: 16px;
     color: #ffffff;
     text-transform: capitalize;
@@ -154,7 +160,7 @@ body {
 }
 
 .btn_1:hover {
-    background-color: #b5bbff;
+    background-color: #202447;
 }
 
 .img_header img {
@@ -226,14 +232,14 @@ body {
 }
 
 .btn_noticia:hover {
-    background-color: #b5bbff;
+    background-color: #202447;
 }
 
 
 /* BOTON DE CARGAR MAS */
 .btn_3 {
     
-    background-color: #202447;
+    background-color: #6775f8;
     margin-top: 50px;
     display: inline-block;
     padding: 13px 35px;
@@ -245,7 +251,7 @@ body {
 }
 
 .btn_3:hover {
-    background-color: #b5bbff;
+    background-color: #202447;
 }
 
 
@@ -288,14 +294,14 @@ body {
 .btn_info {
     display: inline-block;
     padding: 5px 25px;
-    background-color: #202447;
+    background-color: #6775f8;
     color: #ffffff;
     border-radius: 10px;
     
 }
 
 .btn_info:hover {
-    background-color: #b5bbff;
+    background-color: #202447;
 }
 
 
@@ -406,7 +412,7 @@ body {
     display: inline-block;
     padding: 13px 45px;
     border-radius: 25px;
-    background-color: #202447;
+    background-color: #6775f8;
     font-size: 16px;
     color: #ffffff;
     text-transform: capitalize;
@@ -416,7 +422,7 @@ body {
 }
 
 .btn:hover{
-    background-color: #b4bbfb;
+    background-color: #202447;
 }
 
 /* TABLAS DE PROGRAMAS */

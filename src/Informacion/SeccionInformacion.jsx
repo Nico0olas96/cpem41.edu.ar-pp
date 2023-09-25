@@ -1,6 +1,28 @@
 import React from 'react';
 
+/** importamos las imagenes que se van a ir usando / hasta crear la BD */
+
+import imgMesasSeptiembre from '../Imagenes/Mesas/mesas-finalizacion-Septiembre.png'
+
+/** la funcion para cargar la imagen segun corresponda  */
+
+function cargarImagen (imgInformatica) {
+
+    if (imgInformatica === 'septiembre'){
+        imgInformatica = imgMesasSeptiembre
+    }
+
+
+
+    return imgInformatica
+
+}
+
+
+
 const InformacionJson = ({tituloI, descriipcionI, imgI, linkI}) => {
+
+    const imgInformatica = cargarImagen (imgI)
 
     return (
         <div>
@@ -16,7 +38,7 @@ const InformacionJson = ({tituloI, descriipcionI, imgI, linkI}) => {
                     )}
 
                     {imgI !== '' && (
-                        <img src={imgI} className='Informacion_2_img' alt='imagen de la informacion'/>
+                        <img src={imgInformatica} className='Informacion_2_img' alt='imagen de la informacion'/>
                     )}
 
                     {linkI !== '' && (

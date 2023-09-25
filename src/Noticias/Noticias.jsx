@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import NoticiasJson from './NoticiasJson'
 import SeccionNoticias from './SeccionNoticias'
 
+
+
 class Noticias extends Component {
 
     constructor (props) {

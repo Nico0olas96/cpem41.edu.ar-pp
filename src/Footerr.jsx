@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import imgFooter from './Imagenes/Escuela de frente.png'
+import imgFooter from './Imagenes/Escuela/Escuela de frente.png'
 
 class Footerr extends Component {
     render() {

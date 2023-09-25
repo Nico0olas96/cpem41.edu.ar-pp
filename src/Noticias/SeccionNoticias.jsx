@@ -1,9 +1,35 @@
 import React from 'react';
-import imgPreterminada from '../Imagenes/logo Cpem41.jpg'
+import imgPreterminada from '../Imagenes/Escuela/logo Cpem41-2.png'
+
+/** importacion de imagenes */
+import imgUniversidad from '../Imagenes/Noticias/universidad del comahue.png'
+import imgFacultadInformatica from '../Imagenes/Noticias/facultad de informatica.jpg'
+
+
+
+/**Aca voy a ir armando los condicionales  */
+function cargarImagen (imgNoticia) {
+
+    if (imgNoticia === 'universidad' ) {
+        imgNoticia = imgUniversidad
+    }   
+    
+    if (imgNoticia === 'facultad_informatica') {
+        imgNoticia = imgFacultadInformatica
+    }
+
+
+    
+
+
+
+    return imgNoticia
+}
 
 
 const SeccionNoticias = ({tituloN, descripcionN, imgN, linkN}) => {
 
+    const imgAMostrar = cargarImagen(imgN)    
 
     return (
         <div>
@@ -12,7 +38,7 @@ const SeccionNoticias = ({tituloN, descripcionN, imgN, linkN}) => {
                 <div className='section_1'>
 
                     {imgN !== '' ? 
-                        ( <img src={imgN} alt='imagen de la noticias'/> ) 
+                        ( <img src={imgAMostrar} alt='imagen de la noticias'/> ) 
                         :
                         ( <img src={imgPreterminada} alt='imagen preterminada'/> ) 
                     }
@@ -29,6 +55,8 @@ const SeccionNoticias = ({tituloN, descripcionN, imgN, linkN}) => {
 
             </div>
             
+            
+
         </div>
     );
 }
