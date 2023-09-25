@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/cpem41.edu.ar-pp/static/css/main.782691d4.css",
-    "main.js": "/cpem41.edu.ar-pp/static/js/main.8559b3e6.js",
+    "main.css": "/cpem41.edu.ar-pp/static/css/main.8ba0583c.css",
+    "main.js": "/cpem41.edu.ar-pp/static/js/main.fcaf4eaa.js",
     "static/js/787.8f681b8d.chunk.js": "/cpem41.edu.ar-pp/static/js/787.8f681b8d.chunk.js",
     "static/media/Escuela de frente.png": "/cpem41.edu.ar-pp/static/media/Escuela de frente.2d0c129d87f1d36ccbfa.png",
+    "static/media/mesas-finalizacion-Septiembre.png": "/cpem41.edu.ar-pp/static/media/mesas-finalizacion-Septiembre.9a3a3807a8db75ba5bfd.png",
     "static/media/logo Cpem41.jpg": "/cpem41.edu.ar-pp/static/media/logo Cpem41.56f801972d6bd67ba2cb.jpg",
+    "static/media/logo Cpem41-2.png": "/cpem41.edu.ar-pp/static/media/logo Cpem41-2.56cc5889240898c69f30.png",
     "static/media/universidad del comahue.png": "/cpem41.edu.ar-pp/static/media/universidad del comahue.1f7e0a85c472998a912f.png",
+    "static/media/facultad de informatica.jpg": "/cpem41.edu.ar-pp/static/media/facultad de informatica.5dc223c701f413c6d547.jpg",
     "index.html": "/cpem41.edu.ar-pp/index.html",
-    "main.782691d4.css.map": "/cpem41.edu.ar-pp/static/css/main.782691d4.css.map",
-    "main.8559b3e6.js.map": "/cpem41.edu.ar-pp/static/js/main.8559b3e6.js.map",
+    "main.8ba0583c.css.map": "/cpem41.edu.ar-pp/static/css/main.8ba0583c.css.map",
+    "main.fcaf4eaa.js.map": "/cpem41.edu.ar-pp/static/js/main.fcaf4eaa.js.map",
     "787.8f681b8d.chunk.js.map": "/cpem41.edu.ar-pp/static/js/787.8f681b8d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.782691d4.css",
-    "static/js/main.8559b3e6.js"
+    "static/css/main.8ba0583c.css",
+    "static/js/main.fcaf4eaa.js"
   ]
 }
