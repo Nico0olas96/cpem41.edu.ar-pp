@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { HashRouter, Link, Route, Routes } from 'react-router-dom';
+import {Route, Routes } from 'react-router-dom';
+
 
 import Menu from './Menus/Menu'
 import Inicio from './Menus/Inicio'
@@ -24,9 +25,9 @@ class IndexPrincipal extends Component {
         return (
             <div>
 
-
                 <Menu/>
 
+                
                 <Routes>
                     <Route path='/' element={<Cpem41/>}/>
                     
