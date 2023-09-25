@@ -3,6 +3,8 @@ import React from 'react';
 /** importamos las imagenes que se van a ir usando / hasta crear la BD */
 
 import imgMesasSeptiembre from '../Imagenes/Mesas/mesas-finalizacion-Septiembre.png'
+import imgMesasAgosto from '../Imagenes/Mesas/mesas-finalizacion-agosto.jpg'
+import imgMesasJunio from '../Imagenes/Mesas/mesas finalizacion Junio.png'
 
 /** la funcion para cargar la imagen segun corresponda  */
 
@@ -11,7 +13,12 @@ function cargarImagen (imgInformatica) {
     if (imgInformatica === 'septiembre'){
         imgInformatica = imgMesasSeptiembre
     }
-
+    if (imgInformatica === 'agosto'){
+        imgInformatica = imgMesasAgosto
+    }
+    if (imgInformatica === 'junio'){
+        imgInformatica = imgMesasJunio
+    }
 
 
     return imgInformatica
@@ -20,7 +27,7 @@ function cargarImagen (imgInformatica) {
 
 
 
-const InformacionJson = ({tituloI, descriipcionI, imgI, linkI}) => {
+const InformacionJson = ({tituloI, descriipcionI, descripcion2, imgI, linkI, finalI}) => {
 
     const imgInformatica = cargarImagen (imgI)
 
@@ -33,7 +40,8 @@ const InformacionJson = ({tituloI, descriipcionI, imgI, linkI}) => {
 
                     {descriipcionI !== '' &&(
                         <p>
-                            {descriipcionI}
+                            {descriipcionI} <br/> <br/>
+                            {descripcion2} <br/> 
                         </p>
                     )}
 
@@ -44,6 +52,10 @@ const InformacionJson = ({tituloI, descriipcionI, imgI, linkI}) => {
                     {linkI !== '' && (
                         <a href={linkI} className='btn_info' target='__blank' >Click Aqui</a>
                     )}
+
+                    <p>
+                        {finalI}
+                    </p>
 
                 </div>
 

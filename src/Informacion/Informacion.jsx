@@ -41,8 +41,10 @@ class Informacion extends Component {
                                 key = {index}
                                 tituloI = {item.titulo}
                                 descriipcionI = {item.descripcion}
+                                descripcion2 = {item.descripcion2}
                                 imgI = {item.img}
                                 linkI = {item.link}
+                                finalI = {item.finalI}
 
                             />
                         ))}
