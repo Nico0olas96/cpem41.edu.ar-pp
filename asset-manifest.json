@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/cpem41.edu.ar-pp/static/css/main.811f5edc.css",
-    "main.js": "/cpem41.edu.ar-pp/static/js/main.67996043.js",
+    "main.css": "/cpem41.edu.ar-pp/static/css/main.264d7e87.css",
+    "main.js": "/cpem41.edu.ar-pp/static/js/main.345089ee.js",
     "static/js/787.8f681b8d.chunk.js": "/cpem41.edu.ar-pp/static/js/787.8f681b8d.chunk.js",
     "static/media/Escuela de frente.png": "/cpem41.edu.ar-pp/static/media/Escuela de frente.2d0c129d87f1d36ccbfa.png",
     "static/media/mesas finalizacion Junio.png": "/cpem41.edu.ar-pp/static/media/mesas finalizacion Junio.3eeb0390abebb8adc362.png",
     "static/media/mesas-finalizacion-Septiembre.png": "/cpem41.edu.ar-pp/static/media/mesas-finalizacion-Septiembre.9a3a3807a8db75ba5bfd.png",
     "static/media/mesas-finalizacion-agosto.jpg": "/cpem41.edu.ar-pp/static/media/mesas-finalizacion-agosto.6900f5e74626a7048e2e.jpg",
+    "static/media/Suspencion-27-09.png": "/cpem41.edu.ar-pp/static/media/Suspencion-27-09.0a2d6212166646e79e6e.png",
     "static/media/logo Cpem41.jpg": "/cpem41.edu.ar-pp/static/media/logo Cpem41.56f801972d6bd67ba2cb.jpg",
     "static/media/logo Cpem41-2.png": "/cpem41.edu.ar-pp/static/media/logo Cpem41-2.56cc5889240898c69f30.png",
     "static/media/universidad del comahue.png": "/cpem41.edu.ar-pp/static/media/universidad del comahue.1f7e0a85c472998a912f.png",
     "static/media/facultad de informatica.jpg": "/cpem41.edu.ar-pp/static/media/facultad de informatica.5dc223c701f413c6d547.jpg",
     "index.html": "/cpem41.edu.ar-pp/index.html",
-    "main.811f5edc.css.map": "/cpem41.edu.ar-pp/static/css/main.811f5edc.css.map",
-    "main.67996043.js.map": "/cpem41.edu.ar-pp/static/js/main.67996043.js.map",
+    "main.264d7e87.css.map": "/cpem41.edu.ar-pp/static/css/main.264d7e87.css.map",
+    "main.345089ee.js.map": "/cpem41.edu.ar-pp/static/js/main.345089ee.js.map",
     "787.8f681b8d.chunk.js.map": "/cpem41.edu.ar-pp/static/js/787.8f681b8d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.811f5edc.css",
-    "static/js/main.67996043.js"
+    "static/css/main.264d7e87.css",
+    "static/js/main.345089ee.js"
   ]
 }
