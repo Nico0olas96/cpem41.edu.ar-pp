@@ -5,23 +5,27 @@ import React from 'react';
 import imgMesasSeptiembre from '../Imagenes/Mesas/mesas-finalizacion-Septiembre.png'
 import imgMesasAgosto from '../Imagenes/Mesas/mesas-finalizacion-agosto.jpg'
 import imgMesasJunio from '../Imagenes/Mesas/mesas finalizacion Junio.png'
+import imgSuspencion2709 from '../Imagenes/Informacion/Suspencion-27-09.png'
+
 
 /** la funcion para cargar la imagen segun corresponda  */
 
-function cargarImagen (imgInformatica) {
+function cargarImagen (imgInformacion) {
 
-    if (imgInformatica === 'septiembre'){
-        imgInformatica = imgMesasSeptiembre
+    if (imgInformacion === 'suspencion2709') {
+        imgInformacion = imgSuspencion2709
     }
-    if (imgInformatica === 'agosto'){
-        imgInformatica = imgMesasAgosto
+    if (imgInformacion === 'septiembre'){
+        imgInformacion = imgMesasSeptiembre
     }
-    if (imgInformatica === 'junio'){
-        imgInformatica = imgMesasJunio
+    if (imgInformacion === 'agosto'){
+        imgInformacion = imgMesasAgosto
+    }
+    if (imgInformacion === 'junio'){
+        imgInformacion = imgMesasJunio
     }
 
-
-    return imgInformatica
+    return imgInformacion
 
 }
 
@@ -29,7 +33,7 @@ function cargarImagen (imgInformatica) {
 
 const InformacionJson = ({tituloI, descriipcionI, descripcion2, imgI, linkI, finalI}) => {
 
-    const imgInformatica = cargarImagen (imgI)
+    const imgInformacion = cargarImagen (imgI)
 
     return (
         <div>
@@ -46,7 +50,7 @@ const InformacionJson = ({tituloI, descriipcionI, descripcion2, imgI, linkI, fin
                     )}
 
                     {imgI !== '' && (
-                        <img src={imgInformatica} className='Informacion_2_img' alt='imagen de la informacion'/>
+                        <img src={imgInformacion} className='Informacion_2_img' alt='imagen de la informacion'/>
                     )}
 
                     {linkI !== '' && (

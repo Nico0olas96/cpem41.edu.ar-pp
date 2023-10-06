@@ -5,7 +5,7 @@ class AcuerdosEscolares extends Component {
         return (
             <div className='seccion_menu'>
 
-                <div className='seccion'>
+                <div className='seccion_acuerdos'>
                     
                     <h2>Acuerdos Escolares</h2>
 
@@ -152,7 +152,7 @@ class AcuerdosEscolares extends Component {
 
                     <br/>
                     <br/>
-                    <h3> Sujetas a Revision Permanentes </h3> 
+                    <h3 className='revision'> ❗❗❗Sujetas a Revision Permanentes❗❗❗ </h3> 
                             
 
 

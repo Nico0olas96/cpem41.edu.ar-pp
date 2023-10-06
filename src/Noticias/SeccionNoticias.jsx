@@ -6,7 +6,6 @@ import imgUniversidad from '../Imagenes/Noticias/universidad del comahue.png'
 import imgFacultadInformatica from '../Imagenes/Noticias/facultad de informatica.jpg'
 
 
-
 /**Aca voy a ir armando los condicionales  */
 function cargarImagen (imgNoticia) {
 
@@ -51,7 +50,7 @@ const SeccionNoticias = ({tituloN, descripcionN, imgN, linkN}) => {
                     {descripcionN}
                 </p>
 
-                <a href={linkN} target='_blank' className='btn_noticia' rel='noopener noreferrer'> Ir a la Noticia</a>
+                <a href={linkN} target='_blank' className='btn_noticia' rel='noopener noreferrer'> Ir a Noticia</a>
 
             </div>
             

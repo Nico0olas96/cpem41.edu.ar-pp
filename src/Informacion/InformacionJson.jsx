@@ -11,7 +11,22 @@
     }
  */
 const InformacionJson = [
-
+    {
+        titulo: "ESTUDIANTES EGRESADOS TM y TT ",
+        descripcion: "inscripciones abiertas a mesas de finalización de estudios Octubre",
+        descripcion2: "La inscripción será a través del siguiente link (estará habilitada hasta el 04/09/2023 )", 
+        img : "",
+        link: "https://forms.gle/pc6Lb8DdYmCYV8Vq8",
+        finalI : "Fechas de Examen: 30 y 31 de Octubre"
+    },
+    {
+        titulo: "Suspencion de Actividades",
+        descripcion: "",
+        descripcion2: "",
+        img: "suspencion2709",
+        link: "",
+        finalI :""
+    },
     {
         titulo: "Mesas Finalizacion de Estudio - SEPTIEMBRE - Turno DIURNO",
         descripcion: "",

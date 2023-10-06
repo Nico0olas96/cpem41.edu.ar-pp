@@ -407,6 +407,38 @@ body {
     padding: 80px;
 }
 
+.revision {
+    text-align: center;
+}
+
+.seccion_acuerdos h2 {
+    text-align: center;
+}
+
+.seccion_acuerdos h3 {
+    font-size: 18px;
+    color: #262626;
+    margin-bottom: 5px;
+  }
+  
+  /* Estilos para texto dentro de .seccion_acuerdos */
+  .seccion_acuerdos p {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 5px;
+  }
+  
+  /* Estilos para listas dentro de .seccion_acuerdos */
+  .seccion_acuerdos ul {
+    margin-left: 30px;
+  }
+  
+  /* Estilos para elementos de lista dentro de .seccion_acuerdos */
+  .seccion_acuerdos li {
+    margin-bottom: 5px;
+  }
+  
+
 
 .btn {
     display: inline-block;
