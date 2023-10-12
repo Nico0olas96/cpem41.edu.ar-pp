@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NoticiasDocentes from '../Docentes/Noticias Docentes';
 import Licencias from '../Docentes/Licencias';
 import Formularios from '../Docentes/Formularios';
+import { Link } from 'react-router-dom';
 
 class Docentes extends Component {
 
@@ -45,6 +46,8 @@ class Docentes extends Component {
                     <div className='btn' onClick={this.cargarSeccionN}>Nuevos Docentes</div>
                     <div className='btn' onClick={this.cargarSeccionD}>Formularios</div>
                     <div className='btn' onClick={this.cargarSeccionL}>Licencias</div>
+
+                    <Link to={'/Usuarios/UsuariosPrincipal'} className='btn'>Inicio Session</Link>
 
 
                 </div>

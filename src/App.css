@@ -618,6 +618,59 @@ h4 { /* texto */
 
 }
 
+/* LOGIN */
+
+.iniciosession {
+    padding: 80px;
+}
+
+.contenedorcentrado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row;
+
+    padding: 80px;
+    
+}
+
+.login {
+    width: 100%;
+    max-width: 320px;
+    min-width: 320px;
+    padding: 30px 30px 50px 30px;
+    background-color: #6176ff;
+}
+
+.login input{
+    font-size: 120%;
+    color:#3c4245;
+    margin-top: 15px;
+}
+
+.login h1 {
+    font-size: 300%;
+    color:#201e1d;
+}
+
+.login button {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color:#1b262c;
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: #dfcdc3;
+    
+    margin-top: 10px;
+}
+
+.login button:hover {
+    background-color: #3c4245;
+    color:#dfcdc3;
+}
+
+
 @media (max-width:1000px) {
 
     .menu {

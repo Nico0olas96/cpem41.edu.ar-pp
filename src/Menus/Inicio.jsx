@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
 import Noticias from '../Noticias/Noticias'
-import Informacion from '../Informacion/Informacion'
+
+import NewInformacionDb from '../Informacion/NewInformacionDb';
 
 class Inicio extends Component {
     render() {
@@ -10,7 +11,7 @@ class Inicio extends Component {
 
                 <Noticias/>
 
-                <Informacion/>
+                <NewInformacionDb/>
 
             </div>
         );

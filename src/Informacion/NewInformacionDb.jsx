@@ -1,0 +1,59 @@
+  import React, { useEffect, useState } from 'react';
+  import axios from 'axios';
+  import NewSeccionInformacion from './NewSeccionInformacion';
+
+  const baseURL = 'http://localhost:8000/informacion';
+
+
+
+  const NewInformacionDb = () => {
+
+
+    const [informacion, setInformacion] = useState([]);
+
+    useEffect(() => {
+      
+      getInformacion()
+    }, [])
+
+    
+    const getInformacion = async () => {
+      try {
+        const response = await axios.get(baseURL);
+        const reversedData = response.data.slice().reverse();
+        setInformacion(reversedData);
+              
+      } catch (error) {
+        console.error('Error al obtener la información:', error)
+      }
+    }
+
+    return (
+      <div>
+        <div className='informacion container'>
+
+          <h2>INFORMACION IMPORTANTE</h2>
+
+          <div className='informacion_container'>
+          
+              {informacion.map ( (item) => (
+
+                <NewSeccionInformacion
+                  key={item.id}
+                  titulo={item.titulo}
+                  descripcion={item.descripcion}
+                  img={item.img}
+                  link={item.link}
+                  finalI={item.finalI}
+                />
+
+
+              ))}
+
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+  export default NewInformacionDb;

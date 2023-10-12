@@ -1,22 +1,21 @@
-import React, { Component } from 'react';
-import { HashRouter as Router } from 'react-router-dom';
+import React, {  } from 'react';
 
 import './App.css'
 
 import IndexPrincipal from './Index Principal';
 
-class App extends Component {
-  render() {
+
+const App = () => {
+
+
     return (
-      <Router>
         <div className="App">
           <header className="App-header">
             <IndexPrincipal />
           </header>
         </div>
-      </Router>
     );
-  }
+  
 }
 
 export default App;

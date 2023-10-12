@@ -1,5 +1,5 @@
 {
-  "homepage":"https://Nico0olas96.github.io/cpem41.edu.ar-pp" ,
+  "homepage": "https://Nico0olas96.github.io/cpem41.edu.ar-pp",
   "name": "cpem41.edu.ar-pp",
   "version": "0.1.0",
   "private": true,
@@ -10,14 +10,14 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.15.0",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "zlib": "^1.0.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-        
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
