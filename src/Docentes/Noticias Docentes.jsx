@@ -17,10 +17,6 @@ const NoticiasDocentes = () => {
 
             <br/>
 
-            <h4>Completar y enviar la siguiente información sotdcitada </h4>
-
-            <br/>
-
             <HorasTomadas/>
 
         </div>

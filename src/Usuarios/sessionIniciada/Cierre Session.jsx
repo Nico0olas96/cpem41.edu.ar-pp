@@ -12,7 +12,7 @@ const CierreSesscion = () => {
 
 
     return (
-        <div className='iniciosession'>
+        <div>
 
           <button onClick={cierreSession}>Cerrar sesión</button>
             

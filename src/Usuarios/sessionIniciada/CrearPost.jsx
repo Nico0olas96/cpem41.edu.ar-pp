@@ -2,117 +2,139 @@ import axios from 'axios';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const URI = 'http://localhost:8000/informacion'
+const URI = 'http://localhost:8000/informacion';
 
 const CrearPost = () => {
     const [titulo, setTitulo] = useState("");
     const [descripcion, setDescripcion] = useState("");
-    const [img, setImg] = useState(null);
     const [link, setLink] = useState("");
     const [finalI, setFinalI] = useState("");
+    const [img, setImg] = useState(null)
     const navigate = useNavigate();
+
 
     const guardadoI = async (e) => {
         e.preventDefault();
+        if(!titulo){
+            alert('el titulo es obligatorio')
+            return
+        }
 
         try {
-            await axios.post(URI, {
-                titulo: titulo,
-                descripcion: descripcion,
-                link: link,
-                finalI: finalI
+            const formData = new FormData();
+           
+            formData.append('titulo', titulo);
+            formData.append('descripcion', descripcion);
+            formData.append('link', link);
+            formData.append('finalI', finalI);
+            formData.append('imagen', img);
+
+            axios.post(URI, formData, {
+            headers: {
+                'Content-Type': 'multipart/form-data'
+            }
             });
             
-            //esto es para subir la img a la base 
-            
-            /*const formdata = new FormData()
-            formdata.append('img', img)
-
-            fetch(URI, {    
-                method:'POST',
-                body: formdata
-            })*/ 
-
             
             alert('Informacion Cargada con exito')
 
             // Limpiar los campos del formulario
             setTitulo('');
             setDescripcion('');
-            setImg(null);
-            document.getElementById('img').value = null
             setLink('');
             setFinalI('');
+            setImg(null)
             
 
             navigate('/Usuarios/PanelPrincipal');
 
         } catch (error) {
-
+            console.log("Mostrando: ",error)
             alert('Error al agregar el post:', error);
         }
     };
 
-    const handleImageChange = (e) => {
-        setImg (e.target.files[0])
-
-    };
-
-
 
     return (
-        <div>
-            <h3>Create Post</h3>
-            <form onSubmit={guardadoI} encType="multipart/form-data">
-                <label htmlFor="titulo">Título</label>
-                <input
-                    type="text"
-                    id="titulo"
-                    name="titulo"
-                    value={titulo}
-                    onChange={(e) => setTitulo(e.target.value)}
-                />
+        <div className='seccion'>
+        
 
-                <label htmlFor="descripcion">Descripción</label>
-                <input
-                    type="text"
-                    id="descripcion"
-                    name="descripcion"
-                    value={descripcion}
-                    onChange={(e) => setDescripcion(e.target.value)}
-                />
+            <div className="bodylogin2">
+            <div className="centrado">
 
-                <label htmlFor="link">Link</label>
-                <input
-                    type="text"
-                    id="link"
-                    name="link"
-                    value={link}
-                    onChange={(e) => setLink(e.target.value)}
-                />
+                <h1>Crear Publicación</h1>
+                
+                <form onSubmit={guardadoI}>
+                    <label htmlFor="titulo">Título</label>
+                    <div className='boxinput'>
+                        <input
+                            type="text"
+                            id="titulo"
+                            className="controls"
+                            placeholder="Titulo / obligatorio"
+                            name="titulo"
+                            value={titulo}
+                            onChange={(e) => setTitulo(e.target.value)}
+                        />
+                    </div>
 
-                <label htmlFor="finalI">FIRMA</label>
-                <input
-                    type="text"
-                    id="finalI"
-                    name="finalI"
-                    value={finalI}
-                    onChange={(e) => setFinalI(e.target.value)}
-                />
-                <label htmlFor="imagen">Imagen</label>
-                    <input
-                        type="file"
-                        id="img"
-                        name="imagen"
-                        accept="image/*"
-                        onChange={handleImageChange}
-                />
+                    <label htmlFor="descripcion">Descripción</label>
+                    <div className='boxinput'>
+                        <textarea
+                            type="text"
+                            id="descripcion"
+                            className="controls"
+                            placeholder="Descripcion / opcional"
+                            name="descripcion"
+                            value={descripcion}
+                            onChange={(e) => setDescripcion(e.target.value)}
+                        />
+                    </div>
 
-                <button type="submit">Agregar Post</button>
-            </form>
+                    <label htmlFor="link">Link</label>
+                    <div className='boxinput'>
+                        <input
+                            type="textarea"
+                            id="link"
+                            className="controls"
+                            placeholder="Link / opcional"
+                            name="link"
+                            value={link}
+                            onChange={(e) => setLink(e.target.value)}
+                        />
+                    </div>
 
-        </div>
+                    <label htmlFor='Imagen'>Imagen</label>                    
+                    <div className='boxinput'>
+                        <input type="file" accept="image" onChange={(e) => setImg(e.target.files[0])}/>
+                    </div>
+
+                    <label htmlFor="finalI">Firma</label>
+                    <div className='boxinput'>
+                        <input
+                            type="text"
+                            id="finalI"
+                            className="controls"
+                            placeholder="Firma / opcional"
+                            name="finalI"
+                            value={finalI}
+                            onChange={(e) => setFinalI(e.target.value)}
+                        />
+                    </div>
+                    <div className='boxinput'>
+                        <button type='submit'>
+                            Agregar Post
+                        </button>
+                    </div>
+                    
+                </form>
+                <br/>
+                <br/>
+
+            
+            </div>
+        </div></div>
     );
-}
+};
 
 export default CrearPost;

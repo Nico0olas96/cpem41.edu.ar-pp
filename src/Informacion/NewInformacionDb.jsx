@@ -45,6 +45,8 @@
                   img={item.img}
                   link={item.link}
                   finalI={item.finalI}
+                  createdAt={item.createdAt}
+                  
                 />
 
 

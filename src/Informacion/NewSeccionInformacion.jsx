@@ -1,7 +1,7 @@
 import React from 'react';
 import ImageDisplay from './ImageDisplay'
 
-const NewSeccionInformacion = ({id, titulo, descripcion, img, link, finalI}) => {
+const NewSeccionInformacion = ({id, titulo, descripcion, img, link, finalI, createdAt}) => {
     
     return (
 
@@ -27,7 +27,7 @@ const NewSeccionInformacion = ({id, titulo, descripcion, img, link, finalI}) => 
             ) : null}
 
 
-            <p>{finalI}</p>
+            <p>{finalI} 🖋️ - {createdAt} </p>
             </div>
 
 
