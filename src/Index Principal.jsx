@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Menu from './Menus/Menu';
 import Inicio from './Menus/Inicio';
@@ -16,8 +16,6 @@ import TurnoVespertino from './Alumno/TV/TurnoVespertino';
 import UsuariosPrincipal from './Usuarios/UsuariosPrincipal';
 
 import PanelPrincipal from './Usuarios/PanelPrincipal';
-import PrivateRoute from './Usuarios/PrivateRoute';
-import CierreSesscion from './Usuarios/sessionIniciada/Cierre Session';
 
 const IndexPrincipal = () => {
 
@@ -52,11 +50,6 @@ const IndexPrincipal = () => {
                 <Route path="/Alumno/TD/TurnoDiurno" element={<TurnoDiurno />} />
                 <Route path="/Alumno/TV/TurnoVespertino" element={<TurnoVespertino />} />
 
-            
-
-            </Routes> 
-            
-            <Routes>
                 {isAuthenticated ? (
                         <Route path="/Usuarios/PanelPrincipal" element={<PanelPrincipal/>} />
                 ) : (

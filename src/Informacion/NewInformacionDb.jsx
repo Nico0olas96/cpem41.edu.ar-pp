@@ -14,6 +14,7 @@
     useEffect(() => {
       
       getInformacion()
+      
     }, [])
 
     
@@ -32,7 +33,7 @@
       <div>
         <div className='informacion container'>
 
-          <h2>INFORMACION IMPORTANTE</h2>
+          <h2>INFORMACION INSTITUCIONAL</h2>
 
           <div className='informacion_container'>
           

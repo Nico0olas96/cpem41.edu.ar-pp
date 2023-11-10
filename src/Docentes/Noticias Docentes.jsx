@@ -12,7 +12,7 @@ const NoticiasDocentes = () => {
             <h4>
                 Comunicate dentro de las 24hs con la escuela a travez del mail oficial. 
                 <br/>
-                Email: <a href="mailto:cpem41secretaria@gmail.com"> cpem41secretaria@gmail.com </a>
+                <a href="mailto:cpem41secretaria@gmail.com"> cpem41secretaria@gmail.com </a>
             </h4>
 
             <br/>

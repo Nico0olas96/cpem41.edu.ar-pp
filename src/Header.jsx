@@ -23,9 +23,10 @@ class Header extends Component {
                         <h1> <span> BIENVENIDO </span> </h1> 
                         <h2>Sitio oficial del Cpem41</h2>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos exercitationem est non
-                            voluptatem iure minus corporis maxime adipisci magnam. Possimus velit quaerat eum minima fuga
-                            consectetur in adipisci id maiores.
+                            Somos una institución educativa de gestión pública en el departamento de Confluencia, en la provincia de Neuquén.
+                            Ofrecemos educación secundaria para jóvenes y adultos. 
+                            Ofrecemos una orientación educativa basada en los principios humanísticos y ecológicos para jóvenes, y la opción de Perito Mercantil para adultos. 
+                            Nuestra misión es ofrecer una educación de calidad que promueva el crecimiento personal y la formación de valores a los estudiantes.
                         </p>
                         
                     

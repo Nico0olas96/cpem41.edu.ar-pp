@@ -2,6 +2,13 @@ import React, { useState } from 'react';
 
 import CrearPost from './sessionIniciada/CrearPost';
 import AdministracionPost from './sessionIniciada/AdministracionPost';
+import AdministrarHorarios from './sessionIniciada/AdministrarHorarios';
+import AdministrarHorariostv from './sessionIniciada/AdministrarHorariostv';
+import AdministrarMesas from './sessionIniciada/AdministrarMesas';
+import AdministrarMesastv from './sessionIniciada/AdministrarMesastv';
+import Publicaciones from './panel/Publicaciones';
+import Horarios from './panel/Horarios';
+import Mesas from './panel/Mesas';
 
 
 
@@ -9,14 +16,17 @@ const PanelPrincipal = () => {
 
     const  [seccion, setSeccion] = useState('')
 
-    const cargarSeccionPost = () =>{
-        setSeccion ('crearPost')
+    const cargarSeccionPublicaciones = () =>{
+        setSeccion ('publicaciones')
     }
 
-    const cargarSeccionModificacion = () =>{
-        setSeccion ('modificarPost')
+    const cargarSeccionHorarios = () =>{
+        setSeccion ('horarios')
     }
 
+    const cargarSeccionMesas = () => {
+        setSeccion('mesas')
+    }
 
     const verificarSession = () => {
         const tiempoSession = Date.now();
@@ -37,8 +47,8 @@ const PanelPrincipal = () => {
 
       };
     
-    // verificarSession();
-      
+    //borrar comentario para el tiempo -->  verificarSession()
+    verificarSession()
     
 
     const cierreSession = () => {
@@ -52,12 +62,15 @@ const PanelPrincipal = () => {
 
                 <h1> Panel Administrador </h1>
 
-                <div className='btn' onClick={cargarSeccionPost}>
-                    Subir Publicacion
+                <div className='btn' onClick={cargarSeccionPublicaciones}>
+                    Publicaciones
                 </div>
                 
-                <div className='btn' onClick={cargarSeccionModificacion}>
-                    Modificar Publicacion
+                <div className='btn' onClick={cargarSeccionHorarios}>
+                    Horarios
+                </div>
+                <div className='btn' onClick={cargarSeccionMesas}>
+                    Mesas
                 </div>
 
                 <div className='btn' onClick={cierreSession}>
@@ -65,10 +78,13 @@ const PanelPrincipal = () => {
                 </div>
                                 
             </div>
-            
-            {seccion === 'crearPost' &&  <CrearPost/> }
 
-            {seccion === 'modificarPost' && <AdministracionPost/> }
+
+            {seccion === 'publicaciones' && <Publicaciones/>}
+
+            {seccion === 'horarios' && <Horarios/>}
+
+            {seccion === 'mesas' && <Mesas/>}
 
 
 

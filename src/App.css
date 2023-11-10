@@ -102,13 +102,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
 /* esconder icono menu */
 .menu label {
     cursor: pointer;
@@ -121,6 +114,7 @@ body {
 .conteiner_header {
     display: flex;
     align-items: center;
+    padding: 30px;
 }
 
 .txt_header {
@@ -260,9 +254,8 @@ body {
 
 /* INFORMACION */
 
-
 .informacion {
-    padding: 0 0 50px 0;
+    padding: 80px 0 50px 0;
     text-align: center;
 
 }
@@ -291,7 +284,7 @@ body {
     color: #000000;
 }
 .Informacion_2 img {
-    max-width: 90%;
+    max-width: 80%;
 }
 
 .btn_info {
@@ -594,9 +587,7 @@ body {
 /* frame */
 .frame {
     padding: 15px;
-
 }
-
 
 /* Titulos */
 
@@ -709,9 +700,9 @@ h4 { /* texto */
 /* Tabla de modificarPost*/
 
 .modificarPost {    
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 5px; 
 }
 
 .modificarPost tr:nth-child(odd) {
@@ -763,6 +754,12 @@ h4 { /* texto */
     background-color: #0056b3;
   }
 
+
+
+  .contenedorDisplay {
+    width: 80%;
+    height: 100%;
+}
 
 
 
@@ -911,6 +908,7 @@ h4 { /* texto */
 
         margin: auto;
     }
+
     
     .tabla-programas td th {
         padding: 10px;
@@ -940,7 +938,15 @@ h4 { /* texto */
     }
 
 
-    
+    .modificarPost{
+        margin: 0;
+        padding: 5px;
+    }
+
+    .modificarPost th, .modificarPost td{
+        padding: 5px;
+        font-size: 6.5px;
+    }
 
 
 }

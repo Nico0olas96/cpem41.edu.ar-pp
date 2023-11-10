@@ -23,13 +23,14 @@ const ModificarPost = () => {
 
     const getInformacion = async () => {
         try {
-          const response = await axios.get(baseURL);
-          
-          const reversedData = response.data.slice().reverse();
+            const response = await axios.get(baseURL)
+            
+            const reversedData = response.data.slice().reverse();
+            setInformacion(reversedData);
 
-          setInformacion(reversedData);                
+
         } catch (error) {
-          console.error('Error al obtener la información:', error)
+            console.error('Error al obtener la información:', error)
         }
     }
 
@@ -53,7 +54,8 @@ const ModificarPost = () => {
         try {
             await axios.put(`${baseURL}/${registro.id}`, registro);
             getInformacion();
-            setSeccion('');
+            setSeccion('modificaciones');
+            alert('Modificaciones Realizadas con Exito')
             setRegistro(null);
         } catch (error) {
           console.error('Error al guardar la modificación:', error);
@@ -68,14 +70,16 @@ const ModificarPost = () => {
 
 
     return (
-        <div className='seccion'>
+        <div>
             
             {seccion === '' && (
                 <div>
-                    <h1>AdministracionPost </h1>
+                    <h1> Modificar Publicacion </h1>
+                    <h4>(No se pueden modificar las Imagenes)</h4>
 
+                <div className='contenedor-tablas'>
                     <table className='modificarPost'>
-                        <thead>
+                        <thead> 
                             <tr>
                             <th>Titulo</th>
                             <th>Descripcion</th>
@@ -87,7 +91,7 @@ const ModificarPost = () => {
                         </thead>
                         <tbody>
                             {informacion.map ( (item) => (
-                                <tr key={item.id}>
+                            <tr key={item.id}>
                                 <td>{item.titulo}</td>
                                 <td>{item.descripcion}</td>
                                 <td>{item.link}</td>
@@ -98,9 +102,10 @@ const ModificarPost = () => {
                                 }
                                 </td>
                                 <td>{item.finalI}</td>
-                                <td>
-                                    <button onClick={ () => modificaciones (item)}>Modificar</button>
-
+                                <td>{
+                                    !item.img || item.img.data.length === 0 &&  (
+                                        <button onClick={ () => modificaciones (item)}>Modificar</button>
+                                    )}
                                     <button onClick={ () => {
                                         const confirmacion = window.confirm('¿Estás seguro de que deseas eliminar este registro?')
                                         if (confirmacion){
@@ -114,7 +119,8 @@ const ModificarPost = () => {
                             ))}
                         </tbody>
                     </table>
-            </div>)}
+                </div>
+                </div>)}
 
             {seccion === 'modificaciones' && registro && (
                     <div className="bodylogin2">
@@ -128,8 +134,7 @@ const ModificarPost = () => {
                                 className="controls"
                                 value={registro.titulo}
                                 onChange={(e) => {
-                                    const nuevoRegistro = { registro, titulo: e.target.value };
-                                    setRegistro(nuevoRegistro);
+                                    setRegistro({ ...registro, titulo: e.target.value });
                                 }}
                                 />
                             </div>
@@ -141,8 +146,7 @@ const ModificarPost = () => {
                                 className="controls"
                                 value={registro.descripcion}
                                 onChange={(e) => {
-                                    const nuevoRegistro = { registro, descripcion: e.target.value };
-                                    setRegistro(nuevoRegistro);
+                                    setRegistro({ ...registro, descripcion: e.target.value });
                                 }}
                                 />
                             </div>
@@ -154,12 +158,10 @@ const ModificarPost = () => {
                                 className="controls"
                                 value={registro.link}
                                 onChange={(e) => {
-                                    const nuevoRegistro = { registro, link: e.target.value };
-                                    setRegistro(nuevoRegistro);
+                                    setRegistro({ ...registro, link: e.target.value });
                                 }}
                                 />
                             </div>
-
                             <label>Firma:</label>
                             <div className='boxinput'>
                                 <input
@@ -167,8 +169,7 @@ const ModificarPost = () => {
                                 className="controls"
                                 value={registro.finalI}
                                 onChange={(e) => {
-                                    const nuevoRegistro = { registro, finalI: e.target.value };
-                                    setRegistro(nuevoRegistro);
+                                    setRegistro({ ...registro, finalI: e.target.value });
                                 }}
                                 />
                             </div>
@@ -178,6 +179,7 @@ const ModificarPost = () => {
                                     Guardar Modificación
                                 </button>
                             </div>
+
                             <div className='boxinput'>
                                 <button type='submit' onClick={() => {setSeccion ('')}}>
                                     Cancelar
@@ -189,7 +191,9 @@ const ModificarPost = () => {
 
             {seccion === 'mostrarImg' && (
                 <div className='frame'> 
+                    
                     <ImageDisplay imagen={guardarImg}/>
+                    
                     <div >
                         <button className='volverModificaciones' onClick={ () => {
                             setSeccion('');

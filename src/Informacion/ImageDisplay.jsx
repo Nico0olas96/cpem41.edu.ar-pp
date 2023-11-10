@@ -6,7 +6,6 @@ const ImageDisplay = ({ imagen }) => {
 
   useEffect(() => {
   
-    // Convierte los datos de búfer en una URL de datos
     if (imagen) {
 
       const arrayBufferView = new Uint8Array(imagen.data);
@@ -25,8 +24,14 @@ const ImageDisplay = ({ imagen }) => {
 
   return (
     <div>
-    
-      <img src={imageDataUrl} className='Informacion_2_img' alt='' />
+
+      <img src={imageDataUrl} className="contenedorDisplay" alt=""
+          onError={(e) => {
+            e.target.style.display = 'none'
+            }} 
+        />
+
+
 
     </div>
   );

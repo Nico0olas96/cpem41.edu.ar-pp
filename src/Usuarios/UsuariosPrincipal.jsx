@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
+const URI = 'http://localhost:8000/login'
+
 const Login = () => {
   const [credentials, setCredentials] = useState({ username: '', password: '' });
 
   const inicioSession = async () => {
 
     try {
-      const response = await axios.post('http://localhost:8000/login', credentials);
+      const response = await axios.post(URI, credentials);
       const token = response.data.token; // Obtener el token de la respuesta
       
       const tiempoSession = Date.now()
-      const finTiempoSession = tiempoSession + 600000
+      const finTiempoSession = tiempoSession + 900000
 
       // Almacenar el token en localStorage
       localStorage.setItem('token', token);
@@ -23,7 +25,7 @@ const Login = () => {
 
     } catch (error) {
       console.error('Error en la solicitud:', error);
-      alert('complete los campos')
+      alert('DATOS INCORRECTOS')
     }
   };
 

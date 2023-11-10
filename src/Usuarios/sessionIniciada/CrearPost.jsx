@@ -1,62 +1,62 @@
-import axios from 'axios';
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import axios from 'axios'
+import React, { useState } from 'react'
 
-const URI = 'http://localhost:8000/informacion';
+const URI = 'http://localhost:8000/informacion'
 
 const CrearPost = () => {
-    const [titulo, setTitulo] = useState("");
-    const [descripcion, setDescripcion] = useState("");
-    const [link, setLink] = useState("");
-    const [finalI, setFinalI] = useState("");
+    const [titulo, setTitulo] = useState("")
+    const [descripcion, setDescripcion] = useState("")
+    const [link, setLink] = useState("")
+    const [finalI, setFinalI] = useState("")
     const [img, setImg] = useState(null)
-    const navigate = useNavigate();
 
 
     const guardadoI = async (e) => {
-        e.preventDefault();
+        
+        e.preventDefault() 
+
         if(!titulo){
             alert('el titulo es obligatorio')
             return
         }
 
         try {
-            const formData = new FormData();
+            const formData = new FormData()
            
-            formData.append('titulo', titulo);
-            formData.append('descripcion', descripcion);
-            formData.append('link', link);
-            formData.append('finalI', finalI);
-            formData.append('imagen', img);
+            formData.append('titulo', titulo)
+            formData.append('descripcion', descripcion)
+            formData.append('link', link)
+            formData.append('finalI', finalI)
+            formData.append('imagen', img)
 
             axios.post(URI, formData, {
             headers: {
                 'Content-Type': 'multipart/form-data'
             }
-            });
+            })
             
             
-            alert('Informacion Cargada con exito')
 
             // Limpiar los campos del formulario
-            setTitulo('');
-            setDescripcion('');
-            setLink('');
-            setFinalI('');
+            setTitulo('')
+            setDescripcion('')
+            setLink('')
+            setFinalI('')
             setImg(null)
+
+            alert('Informacion Cargada con exito')
+
+
             
 
-            navigate('/Usuarios/PanelPrincipal');
-
         } catch (error) {
-            console.log("Mostrando: ",error)
-            alert('Error al agregar el post:', error);
+            alert('Error al agregar el post:', error)
         }
-    };
+    }
 
 
     return (
-        <div className='seccion'>
+        <div>
         
 
             <div className="bodylogin2">
@@ -134,7 +134,7 @@ const CrearPost = () => {
             
             </div>
         </div></div>
-    );
-};
+    )
+}
 
-export default CrearPost;
+export default CrearPost

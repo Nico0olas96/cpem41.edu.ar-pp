@@ -7,6 +7,7 @@ const PrivateRoute = ({ element, isAuthenticated, ...rest }) => {
     return isAuthenticated ? (
 
     <Route {...rest} element={<PanelPrincipal/>} />
+    // <Route {...rest} element={</>} />
 
   ) : (
     <Navigate to="/Usuarios/UsuariosPrincipal" replace={true} />

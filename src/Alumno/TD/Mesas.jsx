@@ -1,133 +1,67 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+
+const baseURL = 'http://localhost:8000/mesasexamenes'
 
 const Mesas = () => {
+
+    const [mesas, setMesas] = useState ([])
+
+    useEffect (() => {
+        getMesas () 
+    }, [])
+
+    const getMesas = async () => {
+        try {
+            const response = await axios.get (baseURL)
+            setMesas(response.data)
+        }catch (error) {
+            console.error('error al obetener mesas de examenes')
+        }
+    }
+
+
     return (
         <div className='seccion'>
 
             <h1>CRONOGRAMA DE MESAS DE EXAMENES</h1>
             <h4> PREVIOS, LIBRES Y EQUIVALENTES </h4>
-            <h4>JULIO 2023, DICIEMBRE 2023 Y FEBRERO 2024</h4>
 
             <div className="contenedor-tablas" >
-            <table className="mi-tabla">
-                <tr>
-                <th>ASIGNATURA</th>
-                <th>CURSO</th>
-                <th>JULIO 2023</th>
-                <th>DICIEMBRE 2023</th>
-                <th>FEBRERO 2024</th>
-                <th>HORARIOS</th>
-                <th>INTEGRANTES TRIBUNAL</th>
-                </tr>
-                <tr>
-                <td>Cs. Fisico Quimica / Quimica - Fisica</td>
-                <td>1ro a 5to</td>
-                <td>24/07</td>
-                <td>18/12</td>
-                <td>09/02</td>
-                <td>08:00 Hs</td>
-                <td>TODOS LOS DOCENTES DEL AREA</td>
-                </tr>
-                <tr>
-                <td>Educacion Plastica / Educacion Musical</td>
-                <td>1ro a 3ro</td>
-                <td>24/07</td>
-                <td>18/12</td>
-                <td>09/02</td>
-                <td>08:00 Hs</td>
-                <td>TODOS LOS DOCENTES DEL AREA</td>
-                </tr>
-                <tr>
-                <td>Cs. Biologicas / Ed. para la Salud / Bioestadistica / Taller y Pr. Campo / Contaminacion Ambiental / Ecologia I y II </td>
-                <td>1ro a 5to</td>
-                <td>24/07</td>
-                <td>18/12</td>
-                <td>09/02</td>
-                <td>13:30 Hs</td>
-                <td>TODOS LOS DOCENTES DEL AREA</td>
-                </tr>
-                <tr>
-                <td>Informatica / Mecanografia</td>
-                <td>3ro a 5to</td>
-                <td>24/07</td>
-                <td>18/12</td>
-                <td>09/02</td>
-                <td>13:30 Hs</td>
-                <td>TODOS LOS INTEGRANTES</td>
-                </tr>
-                <tr>
-                <td>Matematica</td>
-                <td>1ro a 3ro</td>
-                <td>25/07</td>
-                <td>19/12</td>
-                <td>12/02</td>
-                <td>08:00 Hs</td>
-                <td>TODOS LOS DOCENTES DEL AREA</td>
-                </tr>
-                <tr>
-                <td>Ingles</td>
-                <td>1ro a 5ro</td>
-                <td>25/07</td>
-                <td>19/12</td>
-                <td>12/02</td>
-                <td>08:00 Hs</td>
-                <td>TODOS LOS DOCENTES DEL AREA</td>
-                </tr>
-                <tr>
-                <td>Historia / Geografia / Civica</td>
-                <td>1ro a 5ro</td>
-                <td>25/07</td>
-                <td>19/12</td>
-                <td>12/02</td>
-                <td>13:30 Hs</td>
-                <td>TODOS LOS DOCENTES DEL AREA</td>
-                </tr>
-                <tr>
-                <td>Contabilidad</td>
-                <td>1ro a 3ro</td>
-                <td>25/07</td>
-                <td>19/12</td>
-                <td>12/02</td>
-                <td>13:30 Hs</td>
-                <td>TODOS LOS DOCENTES DEL AREA</td>
-                </tr>
-                <tr>
-                <td>Lengua y Literatura / Tecnica de Estudio</td>
-                <td>1ro a 5to</td>
-                <td>26/07</td>
-                <td>20/12</td>
-                <td>13/02</td>
-                <td>08:00 Hs</td>
-                <td>TODOS LOS DOCENTES DEL AREA</td>
-                </tr>
-                <tr>
-                <td>Matematica</td>
-                <td>4to a 5to</td>
-                <td>26/07</td>
-                <td>20/12</td>
-                <td>13/02</td>
-                <td>08:00 Hs</td>
-                <td>TODOS LOS DOCENTES DEL AREA</td>
-                </tr>
-                <tr>
-                <td>Taller Integrador / M. Comunicaciones / Int. Metodologia Aplicada / Cs. Sociales / Filosofia / Psicologia</td>
-                <td>4to a 5to</td>
-                <td>26/07</td>
-                <td>20/12</td>
-                <td>13/02</td>
-                <td>13:30 Hs</td>
-                <td>TODOS LOS DOCENTES DEL AREA</td>
-                </tr>
-                <tr>
-                <td>Educacion Fisica</td>
-                <td>1ro a 5to</td>
-                <td>26/07</td>
-                <td>20/12</td>
-                <td>13/02</td>
-                <td>13:30 Hs</td>
-                <td>TODOS LOS DOCENTES DEL AREA</td>
-                </tr>
-            </table>
+                <table className="mi-tabla">
+                <thead>
+                    <tr>
+                        <th>ASIGNATURA</th>
+                        <th>CURSO</th>
+                        <th>JULIO 2023</th>
+                        <th>DICIEMBRE 2023</th>
+                        <th>FEBRERO 2024</th>
+                        <th>HORARIOS</th>
+                        <th>INTEGRANTES TRIBUNAL</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    {Array.isArray(mesas) ? (
+                        mesas.map ((item) => (
+                            <tr key={item.id}>
+                                <td>{item.asignatura}</td>
+                                <td>{item.curso}</td>
+                                <td>{item.julio2023}</td>
+                                <td>{item.diciembre2023}</td>
+                                <td>{item.febrero2024}</td>
+                                <td>{item.horarios}</td>
+                                <td>{item.integrantestribunal}</td>
+                            </tr>
+                        ))
+                    ) : (
+                        <tr>
+                            <td colSpan="6">Cargando datos...</td>
+                        </tr>
+                    )}
+
+                </tbody>
+                </table>
 
             </div>
 
